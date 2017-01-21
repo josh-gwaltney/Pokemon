@@ -20,5 +20,9 @@ export default {
     html: {
         src: src + '/index.html',
         dest: dist + '/index.html'
+    },
+    vendorjs: {
+        src: [],
+        dest: ''
     }
 }

@@ -1,6 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
 class PokemonComponent extends React.Component {
     constructor(){
         super();
@@ -8,95 +5,95 @@ class PokemonComponent extends React.Component {
 
     render(){
         return (
-            <div class="row">
-                <div class="col-sm-12 pokemon">
-                    <div class="card white">
-                        <div class="heading">
-                            <label class="card-title">000 Pokemon</label>
+            <div className="row">
+                <div className="col-sm-12 pokemon">
+                    <div className="card white">
+                        <div className="heading">
+                            <label className="card-title">000 Pokemon</label>
                         </div>
-                        <div class="body">
-                            <div class="builder-col">
-                                <div class="portrait">
+                        <div className="body">
+                            <div className="builder-col">
+                                <div className="sprite portrait bulbasaur">
                                 </div>
-                                <div class="form-group">
-                                    <input type="text" id="nickname" name="nickname" class="form-control" />
-                                    <label for="nickname" class="form-control">Nickname</label>
-                                </div>
-                            </div>
-                            <div class="builder-col">
-                                <div class="form-group">
-                                    <input type="text" id="type" name="type" class="form-control" />
-                                    <label for="type" class="form-control">Type</label>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" id="gender" name="gender" class="form-control" />
-                                    <label for="gender" class="form-control">Gender</label>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" id="happiness" name="happiness" class="form-control" />
-                                    <label for="happiness" class="form-control">Happiness</label>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" id="ability" name="ability" class="form-control" />
-                                    <label for="ability" class="form-control">Ability</label>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" id="item" name="item" class="form-control" />
-                                    <label for="item" class="form-control">Held Item</label>
+                                <div className="form-group">
+                                    <input type="text" id="nickname" name="nickname" className="form-control" />
+                                    <label htmlFor="nickname" className="form-control">Nickname</label>
                                 </div>
                             </div>
-                            <div class="builder-col">
+                            <div className="builder-col">
+                                <div className="form-group">
+                                    <input type="text" id="type" name="type" className="form-control" />
+                                    <label htmlFor="type" className="form-control">Type</label>
+                                </div>
+                                <div className="form-group">
+                                    <input type="text" id="gender" name="gender" className="form-control" />
+                                    <label htmlFor="gender" className="form-control">Gender</label>
+                                </div>
+                                <div className="form-group">
+                                    <input type="text" id="happiness" name="happiness" className="form-control" />
+                                    <label htmlFor="happiness" className="form-control">Happiness</label>
+                                </div>
+                                <div className="form-group">
+                                    <input type="text" id="ability" name="ability" className="form-control" />
+                                    <label htmlFor="ability" className="form-control">Ability</label>
+                                </div>
+                                <div className="form-group">
+                                    <input type="text" id="item" name="item" className="form-control" />
+                                    <label htmlFor="item" className="form-control">Held Item</label>
+                                </div>
+                            </div>
+                            <div className="builder-col">
                                 <label>Moves</label>
-                                <div class="form-group">
-                                    <input type="text" id="move1" name="move1" class="form-control" />
+                                <div className="form-group">
+                                    <input type="text" id="move1" name="move1" />
                                 </div>
-                                <div class="form-group">
-                                    <input type="text" id="move2" name="move2" class="form-control" />
+                                <div className="form-group">
+                                    <input type="text" id="move2" name="move2" />
                                 </div>
-                                <div class="form-group">
-                                    <input type="text" id="move3" name="move3" class="form-control" />
+                                <div className="form-group">
+                                    <input type="text" id="move3" name="move3"  />
                                 </div>
-                                <div class="form-group">
-                                    <input type="text" id="move4" name="move4" class="form-control" />
+                                <div className="form-group">
+                                    <input type="text" id="move4" name="move4"  />
                                 </div>
                             </div>
-                            <div class="builder-col">
+                            <div className="builder-col">
                                 <label>Statistics</label>
                                     <ul>
                                         <li><ul>
-                                            <li class="first"></li>
-                                            <li class="second"></li>
-                                            <li class="third">EVs</li>
+                                            <li className="first"></li>
+                                            <li className="second"></li>
+                                            <li className="third">EVs</li>
                                         </ul></li>
                                         <li><ul>
-                                            <li class="first">HP</li>
-                                            <li class="second"></li>
-                                            <li class="third"></li>
+                                            <li className="first">HP</li>
+                                            <li className="second"></li>
+                                            <li className="third"></li>
                                         </ul></li>
                                         <li><ul>
-                                            <li class="first">Atk</li>
-                                            <li class="second"></li>
-                                            <li class="third"></li>
+                                            <li className="first">Atk</li>
+                                            <li className="second"></li>
+                                            <li className="third"></li>
                                         </ul></li>
                                         <li><ul>
-                                            <li class="first">Def</li>
-                                            <li class="second"></li>
-                                            <li class="third"></li>
+                                            <li className="first">Def</li>
+                                            <li className="second"></li>
+                                            <li className="third"></li>
                                         </ul></li>
                                         <li><ul>
-                                            <li class="first">SpAtk</li>
-                                            <li class="second"></li>
-                                            <li class="third"></li>
+                                            <li className="first">SpAtk</li>
+                                            <li className="second"></li>
+                                            <li className="third"></li>
                                         </ul></li>
                                         <li><ul>
-                                            <li class="first">SpDef</li>
-                                            <li class="second"></li>
-                                            <li class="third"></li>
+                                            <li className="first">SpDef</li>
+                                            <li className="second"></li>
+                                            <li className="third"></li>
                                         </ul></li>
                                         <li><ul>
-                                            <li class="first">Spd</li>
-                                            <li class="second"></li>
-                                            <li class="third"></li>
+                                            <li className="first">Spd</li>
+                                            <li className="second"></li>
+                                            <li className="third"></li>
                                         </ul></li>
                                     </ul>
                             </div>
@@ -107,8 +104,3 @@ class PokemonComponent extends React.Component {
         );
     }
 }
-
-ReactDom.render(
-    <PokemonComponent />,
-    document.getElementById('content')
-);

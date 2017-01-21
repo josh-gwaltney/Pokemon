@@ -1,0 +1,20 @@
+.sprite {
+
+  &.portrait {
+    background-image: url('assets/portraits-1st-gen.png');
+    height: 96px;
+    width: 96px;
+
+    &.bulbasaur {
+      background-position: -30px -30px;
+    }
+
+    &.ivysaur {
+
+    }
+
+    &.venusaur {
+
+    }
+  }
+}
