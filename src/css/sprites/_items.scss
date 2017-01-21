@@ -1,0 +1,221 @@
+.sprite {
+
+  background-repeat: no-repeat;
+
+  &.item {
+    background-image: url('assets/items.png');
+    height: 32px;
+    width: 32px;
+
+    // poke balls
+    &.poke-ball {
+       background-position: 0 0;
+    }
+
+    &.great-ball {
+       background-position: -32px 0;
+    }
+
+    &.ultra-ball {
+       background-position: -64px 0;
+    }
+
+    &.master-ball {
+      background-position: -96px 0;
+    }
+
+    &.safari-ball {
+       background-position: -128px 0;
+    }
+
+    &.net-ball {
+       background-position: -160px 0;
+    }
+
+    &.dive-ball {
+       background-position: -192px 0;
+    }
+
+    &.nest-ball {
+       background-position: -224px 0;
+    }
+
+    &.repeat-ball {
+       background-position: -256px 0;
+    }
+
+    &.timer-ball {
+       background-position: -288px 0;
+    }
+
+    &.luxury-ball {
+       background-position: -320px 0;
+    }
+
+    &.premier-ball {
+       background-position: -352px 0;
+    }
+
+    &.dusk-ball {
+       background-position: -384px 0;
+    }
+
+    &.heal-ball {
+       background-position: -416px 0;
+    }
+
+    &.quick-ball {
+       background-position: -448px 0;
+    }
+
+    &.cherish-ball {
+       background-position: -480px 0;
+    }
+
+    &.fast-ball {
+       background-position: -512px 0;
+    }
+
+    &.level-ball {
+       background-position: -544px 0;
+    }
+
+    &.lure-ball {
+       background-position: -576px 0;
+    }
+
+    &.love-ball {
+       background-position: -608px 0;
+    }
+
+    &.friend-ball {
+       background-position: -640px 0;
+    }
+
+    &.moon-ball {
+       background-position: -672px 0;
+    }
+
+    &.sport-ball {
+       background-position: -704px 0;
+    }
+
+    &.park-ball {
+       background-position: -736px 0;
+    }
+
+    &.dream-ball {
+       background-position: -768px 0;
+    }
+
+    &.heavy-ball {
+       background-position: -800px 0;
+    }
+
+    // recovery items
+    &.potion {
+      background-position: 0 -32px;
+    }
+
+    &.hyper-potion {
+      background-position: -32px -32px;
+    }
+
+    &.super-potion {
+      background-position: -64px -32px;
+    }
+
+    &.full-heal {
+      background-position: -96px -32px;
+    }
+
+    &.antidote {
+       background-position: -128px -32px;
+    }
+
+    &.burn-heal {
+       background-position: -160px -32px;
+    }
+
+    &.ice-heal {
+       background-position: -192px -32px;
+    }
+
+    &.awakening {
+       background-position: -224px -32px;
+    }
+
+    &.parlyze-heal {
+       background-position: -256px -32px;
+    }
+
+    &.timer-ball {
+       background-position: -288px -32px;
+    }
+
+    &.luxury-ball {
+       background-position: -320px -32px;
+    }
+
+    &.premier-ball {
+       background-position: -352px -32px;
+    }
+
+    &.dusk-ball {
+       background-position: -384px -32px;
+    }
+
+    &.heal-ball {
+       background-position: -416px -32px;
+    }
+
+    &.quick-ball {
+       background-position: -448px -32px;
+    }
+
+    &.cherish-ball {
+       background-position: -480px -32px;
+    }
+
+    &.fast-ball {
+       background-position: -512px -32px;
+    }
+
+    &.level-ball {
+       background-position: -544px -32px;
+    }
+
+    &.lure-ball {
+       background-position: -576px -32px;
+    }
+
+    &.love-ball {
+       background-position: -608px -32px;
+    }
+
+    &.friend-ball {
+       background-position: -640px -32px;
+    }
+
+    &.moon-ball {
+       background-position: -672px -32px;
+    }
+
+    &.sport-ball {
+       background-position: -704px -32px;
+    }
+
+    &.park-ball {
+       background-position: -736px -32px;
+    }
+
+    &.dream-ball {
+       background-position: -768px -32px;
+    }
+
+    &.heavy-ball {
+       background-position: -800px -32px;
+    }
+  }
+
+}

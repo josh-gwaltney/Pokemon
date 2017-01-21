@@ -1,0 +1,20 @@
+.sprite {
+
+  &.small {
+    background-image: url('assets/icons-main.png');
+    height: 32px;
+    width: 32px;
+
+    &.bulbasaur {
+      background-position: -18px -4px;
+    }
+
+    &.ivysaur {
+
+    }
+
+    &.venusaur {
+
+    }
+  }
+}

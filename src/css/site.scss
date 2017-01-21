@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+
+@import 'variables/variables';
+
+// fonts
+$font-sans-serif: "RobotoDraft", "Roboto", sans-serif !default;
+$font-serif: Georgia, "Times New Roman", Times, serif !default;
+$font-mono: monospace !default;
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: $font-mono;
+  font-size: 10px;
+}
+
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  line-height: 1.846153846;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+.screen {
+  margin: 5px auto;
+
+  .top {
+    height: 240px;
+    margin: 0 auto 15px;
+    width: 400px;
+  }
+
+  .bottom {
+    height: 240px;
+    margin: 0 auto;
+    width: 320px;
+  }
+}
+
+@import 'sprites/sprites';
+@import 'ui/ui';
+@import 'template/template';
