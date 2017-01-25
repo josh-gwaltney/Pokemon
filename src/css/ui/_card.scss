@@ -1,0 +1,43 @@
+.card {
+  border: 0;
+  box-shadow: 0 1px 3px 0px rgba($black, .33);
+  margin-bottom: 16px;
+
+  .heading {
+    line-height: 17px;
+    min-height: 19px;
+    padding: 4px 4px;
+    position: relative;
+    vertical-align: middle;
+
+    .card-title {
+      color: $primary-text-color;
+      display: inline-block;
+      font-size: 14px;
+      line-height: 17px;
+      padding: 4px 5px;
+      vertical-align: middle;
+    }
+  }
+
+  .body {
+    padding: 8px;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+  }
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after{
+    clear: both;
+  }
+}
