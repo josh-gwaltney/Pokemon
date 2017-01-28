@@ -20,33 +20,7 @@ function calculateStatistic(baseValue, individualValue, effortValue, level, natu
 
     return statistic;
 }
-'use strict';
-
-var data = {
-    pokemon: [{
-        name: 'Bulbasaur',
-        types: ['Grass', 'Poison'],
-        baseStats: {
-            hp: 45,
-            atk: 49,
-            def: 49,
-            spAtk: 65,
-            spDef: 65,
-            spd: 45
-        }
-    }, {
-        name: 'Ivysaur',
-        types: ['Grass', 'Poison'],
-        baseStats: {
-            hp: 80,
-            atk: 82,
-            def: 83,
-            spAtk: 100,
-            spDef: 100,
-            spd: 80
-        }
-    }]
-};
+"use strict";
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -391,7 +365,7 @@ var Type = function () {
 
     return Type;
 }();
-"use strict";
+'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -407,94 +381,134 @@ var PokedexComponent = function (_React$Component) {
     function PokedexComponent() {
         _classCallCheck(this, PokedexComponent);
 
-        return _possibleConstructorReturn(this, (PokedexComponent.__proto__ || Object.getPrototypeOf(PokedexComponent)).call(this));
+        var _this = _possibleConstructorReturn(this, (PokedexComponent.__proto__ || Object.getPrototypeOf(PokedexComponent)).call(this));
+
+        _this._data = [{
+            id: '001',
+            name: 'Bulbasaur',
+            types: ['Grass', 'Poison'],
+            abilities: ['Overgrow', 'Chlorophyll'],
+            hp: 45,
+            attack: 49,
+            defense: 49,
+            spAttack: 65,
+            spDefense: 65,
+            speed: 45,
+            total: 318
+        }, {
+            id: '002',
+            name: 'Ivysaur',
+            types: ['Grass', 'Poison'],
+            abilities: ['Overgrow', 'Chlorophyll'],
+            hp: 60,
+            attack: 62,
+            defense: 63,
+            spAttack: 80,
+            spDefense: 80,
+            speed: 60,
+            total: 405
+        }, {
+            id: '003',
+            name: 'Venusaur',
+            types: ['Grass', 'Poison'],
+            abilities: ['Overgrow', 'Chlorophyll'],
+            hp: 80,
+            attack: 82,
+            defense: 83,
+            spAttack: 100,
+            spDefense: 100,
+            speed: 80,
+            total: 525
+        }];
+
+        return _this;
     }
 
     _createClass(PokedexComponent, [{
-        key: "render",
+        key: 'render',
         value: function render() {
             return React.createElement(
-                "div",
-                { className: "row" },
+                'div',
+                { className: 'row' },
                 React.createElement(
-                    "div",
-                    { className: "col-sm-12" },
+                    'div',
+                    { className: 'col-sm-12' },
                     React.createElement(
-                        "div",
-                        { className: "card white" },
+                        'div',
+                        { className: 'card white' },
                         React.createElement(
-                            "div",
-                            { className: "heading primary" },
-                            React.createElement("title", { className: "card-title" })
+                            'div',
+                            { className: 'heading primary' },
+                            React.createElement('title', { className: 'card-title' })
                         ),
                         React.createElement(
-                            "div",
-                            { className: "body" },
+                            'div',
+                            { className: 'body' },
                             React.createElement(
-                                "div",
-                                { className: "form-group" },
-                                React.createElement("input", { className: "form-control" })
+                                'div',
+                                { className: 'form-group' },
+                                React.createElement('input', { className: 'form-control' })
                             ),
                             React.createElement(
-                                "ul",
+                                'ul',
                                 null,
                                 React.createElement(
-                                    "li",
+                                    'li',
                                     null,
                                     React.createElement(
-                                        "div",
-                                        { className: "icon" },
-                                        "1"
+                                        'div',
+                                        { className: 'icon' },
+                                        '1'
                                     ),
                                     React.createElement(
-                                        "div",
-                                        { className: "name" },
-                                        "Bulbasaur"
+                                        'div',
+                                        { className: 'name' },
+                                        'Bulbasaur'
                                     ),
                                     React.createElement(
-                                        "div",
-                                        { className: "types" },
-                                        "Grass Poison"
+                                        'div',
+                                        { className: 'types' },
+                                        'Grass Poison'
                                     ),
                                     React.createElement(
-                                        "div",
-                                        { className: "abilities" },
-                                        "Overgrow Chlorophyll"
+                                        'div',
+                                        { className: 'abilities' },
+                                        'Overgrow Chlorophyll'
                                     ),
                                     React.createElement(
-                                        "div",
-                                        { className: "stat" },
-                                        "45"
+                                        'div',
+                                        { className: 'stat' },
+                                        '45'
                                     ),
                                     React.createElement(
-                                        "div",
-                                        { className: "stat" },
-                                        "49"
+                                        'div',
+                                        { className: 'stat' },
+                                        '49'
                                     ),
                                     React.createElement(
-                                        "div",
-                                        { className: "stat" },
-                                        "49"
+                                        'div',
+                                        { className: 'stat' },
+                                        '49'
                                     ),
                                     React.createElement(
-                                        "div",
-                                        { className: "stat" },
-                                        "65"
+                                        'div',
+                                        { className: 'stat' },
+                                        '65'
                                     ),
                                     React.createElement(
-                                        "div",
-                                        { className: "stat" },
-                                        "65"
+                                        'div',
+                                        { className: 'stat' },
+                                        '65'
                                     ),
                                     React.createElement(
-                                        "div",
-                                        { className: "stat" },
-                                        "45"
+                                        'div',
+                                        { className: 'stat' },
+                                        '45'
                                     ),
                                     React.createElement(
-                                        "div",
-                                        { className: "stat" },
-                                        "318"
+                                        'div',
+                                        { className: 'stat' },
+                                        '318'
                                     )
                                 )
                             )
