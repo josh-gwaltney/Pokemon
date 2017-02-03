@@ -375,16 +375,106 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var PokedexComponent = function (_React$Component) {
-    _inherits(PokedexComponent, _React$Component);
+var PokedexEntryFull = function (_React$Component) {
+    _inherits(PokedexEntryFull, _React$Component);
 
-    function PokedexComponent() {
-        _classCallCheck(this, PokedexComponent);
+    function PokedexEntryFull() {
+        _classCallCheck(this, PokedexEntryFull);
 
-        return _possibleConstructorReturn(this, (PokedexComponent.__proto__ || Object.getPrototypeOf(PokedexComponent)).call(this));
+        return _possibleConstructorReturn(this, (PokedexEntryFull.__proto__ || Object.getPrototypeOf(PokedexEntryFull)).call(this));
     }
 
-    _createClass(PokedexComponent, [{
+    _createClass(PokedexEntryFull, [{
+        key: "render",
+        value: function render() {}
+    }]);
+
+    return PokedexEntryFull;
+}(React.Component);
+"use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var PokedexEntryShort = function (_React$Component) {
+    _inherits(PokedexEntryShort, _React$Component);
+
+    function PokedexEntryShort() {
+        _classCallCheck(this, PokedexEntryShort);
+
+        var _this = _possibleConstructorReturn(this, (PokedexEntryShort.__proto__ || Object.getPrototypeOf(PokedexEntryShort)).call(this));
+
+        _this.props = {
+            value: null
+        };
+        return _this;
+    }
+
+    _createClass(PokedexEntryShort, [{
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                "div",
+                { className: "pokemon" },
+                React.createElement(
+                    "div",
+                    { className: "icon" },
+                    "icon"
+                ),
+                React.createElement(
+                    "div",
+                    { className: "name" },
+                    this.props.value.name
+                ),
+                React.createElement(
+                    "div",
+                    { className: this.props.value.types[1].toLowerCase() },
+                    this.props.value.types[1]
+                ),
+                React.createElement(
+                    "div",
+                    { className: "abilities" },
+                    "abilities"
+                ),
+                React.createElement(
+                    "div",
+                    { className: "statistics" },
+                    this.props.value.baseStatistics
+                )
+            );
+        }
+    }]);
+
+    return PokedexEntryShort;
+}(React.Component);
+"use strict";
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var PokedexSearch = function (_React$Component) {
+    _inherits(PokedexSearch, _React$Component);
+
+    function PokedexSearch() {
+        _classCallCheck(this, PokedexSearch);
+
+        var _this = _possibleConstructorReturn(this, (PokedexSearch.__proto__ || Object.getPrototypeOf(PokedexSearch)).call(this));
+
+        _this._data = [];
+        return _this;
+    }
+
+    _createClass(PokedexSearch, [{
         key: "render",
         value: function render() {
             return React.createElement(
@@ -400,51 +490,47 @@ var PokedexComponent = function (_React$Component) {
                     { className: "body" },
                     React.createElement(
                         "div",
+                        { className: "tab-bar" },
+                        React.createElement(
+                            "div",
+                            { className: "tab" },
+                            "Pokemon"
+                        ),
+                        React.createElement(
+                            "div",
+                            { className: "tab" },
+                            "Moves"
+                        ),
+                        React.createElement(
+                            "div",
+                            { className: "tab" },
+                            "Abilities"
+                        ),
+                        React.createElement(
+                            "div",
+                            { className: "tab" },
+                            "Items"
+                        )
+                    ),
+                    React.createElement(
+                        "div",
                         { className: "form-group" },
                         React.createElement("input", { type: "text", className: "form-control" })
                     ),
                     React.createElement(
                         "div",
                         { className: "results" },
-                        React.createElement(
-                            "div",
-                            { className: "pokemon" },
-                            React.createElement(
-                                "div",
-                                { className: "icon" },
-                                "icon"
-                            ),
-                            React.createElement(
-                                "div",
-                                { className: "name" },
-                                "name"
-                            ),
-                            React.createElement(
-                                "div",
-                                { className: "types" },
-                                "types"
-                            ),
-                            React.createElement(
-                                "div",
-                                { className: "abilities" },
-                                "abilities"
-                            ),
-                            React.createElement(
-                                "div",
-                                { className: "statistics" },
-                                "statistics"
-                            )
-                        )
+                        this._data.map(function (x, i) {
+                            return React.createElement(PokedexEntryShort, { value: x, key: i });
+                        })
                     )
                 )
             );
         }
     }]);
 
-    return PokedexComponent;
+    return PokedexSearch;
 }(React.Component);
-
-ReactDOM.render(React.createElement(PokedexComponent, null), document.getElementById('pokedex'));
 "use strict";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -455,52 +541,97 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var PokemonEntryComponent = function (_React$Component) {
-    _inherits(PokemonEntryComponent, _React$Component);
+var PokedexComponent = function (_React$Component) {
+    _inherits(PokedexComponent, _React$Component);
 
-    function PokemonEntryComponent() {
-        _classCallCheck(this, PokemonEntryComponent);
+    function PokedexComponent() {
+        _classCallCheck(this, PokedexComponent);
 
-        return _possibleConstructorReturn(this, (PokemonEntryComponent.__proto__ || Object.getPrototypeOf(PokemonEntryComponent)).call(this));
+        var _this = _possibleConstructorReturn(this, (PokedexComponent.__proto__ || Object.getPrototypeOf(PokedexComponent)).call(this));
+
+        _this._data = [{
+            "id": 1,
+            "name": "Bulbasaur",
+            "types": ["Poison", "Grass"],
+            "baseStatistics": [45, 49, 49, 65, 65, 45, 273]
+            // "baseStatistics": {
+            //     "hitPoints": 45,
+            //     "attack": 49,
+            //     "defense": 49,
+            //     "specialAttack": 65,
+            //     "specialDefense": 65,
+            //     "speed": 45,
+            //     "total": 273
+            // }
+        }
+        // ,
+        // {
+        //     "id": 2,
+        //     "name": "Ivysaur",
+        //     "types": [
+        //         "Poison",
+        //         "Grass"
+        //     ],
+        //     "baseStatistics": {
+        //         "hitPoints": 60,
+        //         "attack": 62,
+        //         "defense": 63,
+        //         "specialAttack": 80,
+        //         "specialDefense": 80,
+        //         "speed": 60,
+        //         "total": 345
+        //     }
+        // },
+        //     {
+        //     "id": 3,
+        //     "name": "Venusaur",
+        //     "types": [
+        //         "Poison",
+        //         "Grass"
+        //     ],
+        //         "baseStatistics": {
+        //         "hitPoints": 80,
+        //         "attack": 82,
+        //         "defense": 83,
+        //         "specialAttack": 100,
+        //         "specialDefense": 100,
+        //         "speed": 80,
+        //         "total": 445
+        //     }
+        // }
+        ];
+        return _this;
     }
 
-    _createClass(PokemonEntryComponent, [{
+    // createOutput(){
+    //     let items = [];
+    //     for(let idx = 0; idx < this._data.length; idx++){
+    //         items.push(<EntryComponent value={ this._data[idx] } />);
+    //     }
+    //     return ({items});
+    // }
+    //
+    // renderEntry(item){
+    //     return (
+    //         <EntryComponent value={ item } />
+    //     );
+    // }
+
+    _createClass(PokedexComponent, [{
         key: "render",
         value: function render() {
             return React.createElement(
                 "div",
-                { className: "pokemon" },
-                React.createElement(
-                    "div",
-                    null,
-                    "icon"
-                ),
-                React.createElement(
-                    "div",
-                    null,
-                    "name"
-                ),
-                React.createElement(
-                    "div",
-                    null,
-                    "types"
-                ),
-                React.createElement(
-                    "div",
-                    null,
-                    "abilities"
-                ),
-                React.createElement(
-                    "div",
-                    null,
-                    "statistics"
-                )
+                { className: "pokedex" },
+                React.createElement(PokedexSearch, null)
             );
         }
     }]);
 
-    return PokemonEntryComponent;
+    return PokedexComponent;
 }(React.Component);
+
+ReactDOM.render(React.createElement(PokedexComponent, null), document.getElementById('content'));
 "use strict";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();

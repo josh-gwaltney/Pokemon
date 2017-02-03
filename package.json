@@ -43,6 +43,7 @@
     "gulp-sourcemaps": "latest",
     "gulp-uglify": "latest",
     "gulp-util": "latest",
+    "gulp-webpack": "latest",
     "mocha": "latest",
     "webpack": "latest"
   }
