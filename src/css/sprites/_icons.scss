@@ -1,20 +1,3216 @@
 .sprite {
 
   &.small {
-    background-image: url('assets/icons-main.png');
+    background-image: url('assets/icons.png');
     height: 32px;
     width: 32px;
 
     &.bulbasaur {
-      background-position: -18px -4px;
+      background-position: 0px 0px;
     }
 
     &.ivysaur {
-
+      background-position: -32px 0px;
     }
 
     &.venusaur {
+      background-position: -64px 0px;
+    }
 
+    &.charmander {
+      background-position: -96px 0px;
+    }
+
+    &.charmeleon {
+      background-position: -128px 0px;
+    }
+
+    &.charizard {
+      background-position: -160px 0px;
+    }
+
+    &.squirtle {
+      background-position: -192px 0px;
+    }
+
+    &.wartortle {
+      background-position: -224px 0px;
+    }
+
+    &.blastoise {
+      background-position: -256px 0px;
+    }
+
+    &.caterpie {
+      background-position: -288px 0px;
+    }
+
+    &.metapod {
+      background-position: -320px 0px;
+    }
+
+    &.butterfree {
+      background-position: -352px 0px;
+    }
+
+    &.weedle {
+      background-position: -384px 0px;
+    }
+
+    &.kakuna {
+      background-position: -416px 0px;
+    }
+
+    &.beedrill {
+      background-position: -448px 0px;
+    }
+
+    &.pidgey {
+      background-position: -480px 0px;
+    }
+
+    &.pidgeotto {
+      background-position: -512px 0px;
+    }
+
+    &.pidgeot {
+      background-position: -544px 0px;
+    }
+
+    &.rattata {
+      background-position: -576px 0px;
+    }
+
+    &.raticate {
+      background-position: -608px 0px;
+    }
+
+    &.spearow {
+      background-position: -640px 0px;
+    }
+
+    &.fearow {
+      background-position: -672px 0px;
+    }
+
+    &.ekans {
+      background-position: -704px 0px;
+    }
+
+    &.arbok {
+      background-position: -736px 0px;
+    }
+
+    &.pikachu {
+      background-position: -768px 0px;
+    }
+
+    &.raichu {
+      background-position: 0px -32px;
+    }
+
+    &.sandshrew {
+      background-position: -32px -32px;
+    }
+
+    &.sandslash {
+      background-position: -64px -32px;
+    }
+
+    &.nidoran-f {
+      background-position: -96px -32px;
+    }
+
+    &.nidorina {
+      background-position: -128px -32px;
+    }
+
+    &.nidoqueen {
+      background-position: -160px -32px;
+    }
+
+    &.nidoran-m {
+      background-position: -192px -32px;
+    }
+
+    &.nidorino {
+      background-position: -224px -32px;
+    }
+
+    &.nidoking {
+      background-position: -256px -32px;
+    }
+
+    &.clefairy {
+      background-position: -288px -32px;
+    }
+
+    &.clefable {
+      background-position: -320px -32px;
+    }
+
+    &.vulpix {
+      background-position: -352px -32px;
+    }
+
+    &.ninetales {
+      background-position: -384px -32px;
+    }
+
+    &.jigglypuff {
+      background-position: -416px -32px;
+    }
+
+    &.wigglytuff {
+      background-position: -448px -32px;
+    }
+
+    &.zubat {
+      background-position: -480px -32px;
+    }
+
+    &.golbat {
+      background-position: -512px -32px;
+    }
+
+    &.oddish {
+      background-position: -544px -32px;
+    }
+
+    &.gloom {
+      background-position: -576px -32px;
+    }
+
+    &.vileplume {
+      background-position: -608px -32px;
+    }
+
+    &.paras {
+      background-position: -640px -32px;
+    }
+
+    &.parasect {
+      background-position: -672px -32px;
+    }
+
+    &.venonat {
+      background-position: -704px -32px;
+    }
+
+    &.venomoth {
+      background-position: -736px -32px;
+    }
+
+    &.diglett {
+      background-position: -768px -32px;
+    }
+
+    &.dugtrio {
+      background-position: 0px -64px;
+    }
+
+    &.meowth {
+      background-position: -32px -64px;
+    }
+
+    &.persian {
+      background-position: -64px -64px;
+    }
+
+    &.psyduck {
+      background-position: -96px -64px;
+    }
+
+    &.golduck {
+      background-position: -128px -64px;
+    }
+
+    &.mankey {
+      background-position: -160px -64px;
+    }
+
+    &.primeape {
+      background-position: -192px -64px;
+    }
+
+    &.growlithe {
+      background-position: -224px -64px;
+    }
+
+    &.arcanine {
+      background-position: -256px -64px;
+    }
+
+    &.poliwag {
+      background-position: -288px -64px;
+    }
+
+    &.poliwhirl {
+      background-position: -320px -64px;
+    }
+
+    &.poliwrath {
+      background-position: -352px -64px;
+    }
+
+    &.abra {
+      background-position: -384px -64px;
+    }
+
+    &.kadabra {
+      background-position: -416px -64px;
+    }
+
+    &.alakazam {
+      background-position: -448px -64px;
+    }
+
+    &.machop {
+      background-position: -480px -64px;
+    }
+
+    &.machoke {
+      background-position: -512px -64px;
+    }
+
+    &.machamp {
+      background-position: -544px -64px;
+    }
+
+    &.bellsprout {
+      background-position: -576px -64px;
+    }
+
+    &.weepinbell {
+      background-position: -608px -64px;
+    }
+
+    &.victreebel {
+      background-position: -640px -64px;
+    }
+
+    &.tentacool {
+      background-position: -672px -64px;
+    }
+
+    &.tentacruel {
+      background-position: -704px -64px;
+    }
+
+    &.geodude {
+      background-position: -736px -64px;
+    }
+
+    &.graveler {
+      background-position: -768px -64px;
+    }
+
+    &.golem {
+      background-position: 0px -96px;
+    }
+
+    &.ponyta {
+      background-position: -32px -96px;
+    }
+
+    &.rapidash {
+      background-position: -64px -96px;
+    }
+
+    &.slowpoke {
+      background-position: -96px -96px;
+    }
+
+    &.slowbro {
+      background-position: -128px -96px;
+    }
+
+    &.magnemite {
+      background-position: -160px -96px;
+    }
+
+    &.magneton {
+      background-position: -192px -96px;
+    }
+
+    &.farfetch-d {
+      background-position: -224px -96px;
+    }
+
+    &.doduo {
+      background-position: -256px -96px;
+    }
+
+    &.dodrio {
+      background-position: -288px -96px;
+    }
+
+    &.seel {
+      background-position: -320px -96px;
+    }
+
+    &.dewgong {
+      background-position: -352px -96px;
+    }
+
+    &.grimer {
+      background-position: -384px -96px;
+    }
+
+    &.muk {
+      background-position: -416px -96px;
+    }
+
+    &.shellder {
+      background-position: -448px -96px;
+    }
+
+    &.cloyster {
+      background-position: -480px -96px;
+    }
+
+    &.gastly {
+      background-position: -512px -96px;
+    }
+
+    &.haunter {
+      background-position: -544px -96px;
+    }
+
+    &.gengar {
+      background-position: -576px -96px;
+    }
+
+    &.onix {
+      background-position: -608px -96px;
+    }
+
+    &.drowzee {
+      background-position: -640px -96px;
+    }
+
+    &.hypno {
+      background-position: -672px -96px;
+    }
+
+    &.krabby {
+      background-position: -704px -96px;
+    }
+
+    &.kingler {
+      background-position: -736px -96px;
+    }
+
+    &.voltorb {
+      background-position: -768px -96px;
+    }
+
+    &.electrode {
+      background-position: 0px -128px;
+    }
+
+    &.exeggcute {
+      background-position: -32px -128px;
+    }
+
+    &.exeggutor {
+      background-position: -64px -128px;
+    }
+
+    &.cubone {
+      background-position: -96px -128px;
+    }
+
+    &.marowak {
+      background-position: -128px -128px;
+    }
+
+    &.hitmonlee {
+      background-position: -160px -128px;
+    }
+
+    &.hitmonchan {
+      background-position: -192px -128px;
+    }
+
+    &.lickitung {
+      background-position: -224px -128px;
+    }
+
+    &.koffing {
+      background-position: -256px -128px;
+    }
+
+    &.weezing {
+      background-position: -288px -128px;
+    }
+
+    &.rhyhorn {
+      background-position: -320px -128px;
+    }
+
+    &.rhydon {
+      background-position: -352px -128px;
+    }
+
+    &.chansey {
+      background-position: -384px -128px;
+    }
+
+    &.tangela {
+      background-position: -416px -128px;
+    }
+
+    &.kangaskhan {
+      background-position: -448px -128px;
+    }
+
+    &.horsea {
+      background-position: -480px -128px;
+    }
+
+    &.seadra {
+      background-position: -512px -128px;
+    }
+
+    &.goldeen {
+      background-position: -544px -128px;
+    }
+
+    &.seaking {
+      background-position: -576px -128px;
+    }
+
+    &.staryu {
+      background-position: -608px -128px;
+    }
+
+    &.starmie {
+      background-position: -640px -128px;
+    }
+
+    &.mr-mime {
+      background-position: -672px -128px;
+    }
+
+    &.scyther {
+      background-position: -704px -128px;
+    }
+
+    &.jynx {
+      background-position: -736px -128px;
+    }
+
+    &.electabuzz {
+      background-position: -768px -128px;
+    }
+
+    &.magmar {
+      background-position: 0px -160px;
+    }
+
+    &.pinsir {
+      background-position: -32px -160px;
+    }
+
+    &.tauros {
+      background-position: -64px -160px;
+    }
+
+    &.magikarp {
+      background-position: -96px -160px;
+    }
+
+    &.gyarados {
+      background-position: -128px -160px;
+    }
+
+    &.lapras {
+      background-position: -160px -160px;
+    }
+
+    &.ditto {
+      background-position: -192px -160px;
+    }
+
+    &.eevee {
+      background-position: -224px -160px;
+    }
+
+    &.vaporeon {
+      background-position: -256px -160px;
+    }
+
+    &.jolteon {
+      background-position: -288px -160px;
+    }
+
+    &.flareon {
+      background-position: -320px -160px;
+    }
+
+    &.porygon {
+      background-position: -352px -160px;
+    }
+
+    &.omanyte {
+      background-position: -384px -160px;
+    }
+
+    &.omastar {
+      background-position: -416px -160px;
+    }
+
+    &.kabuto {
+      background-position: -448px -160px;
+    }
+
+    &.kabutops {
+      background-position: -480px -160px;
+    }
+
+    &.aerodactyl {
+      background-position: -512px -160px;
+    }
+
+    &.snorlax {
+      background-position: -544px -160px;
+    }
+
+    &.articuno {
+      background-position: -576px -160px;
+    }
+
+    &.zapdos {
+      background-position: -608px -160px;
+    }
+
+    &.moltres {
+      background-position: -640px -160px;
+    }
+
+    &.dratini {
+      background-position: -672px -160px;
+    }
+
+    &.dragonair {
+      background-position: -704px -160px;
+    }
+
+    &.dragonite {
+      background-position: -736px -160px;
+    }
+
+    &.mewtwo {
+      background-position: -768px -160px;
+    }
+
+    &.mew {
+      background-position: 0px -192px;
+    }
+
+    &.chikorita {
+      background-position: -32px -192px;
+    }
+
+    &.bayleef {
+      background-position: -64px -192px;
+    }
+
+    &.meganium {
+      background-position: -96px -192px;
+    }
+
+    &.cyndaquil {
+      background-position: -128px -192px;
+    }
+
+    &.quilava {
+      background-position: -160px -192px;
+    }
+
+    &.typhlosion {
+      background-position: -192px -192px;
+    }
+
+    &.totodile {
+      background-position: -224px -192px;
+    }
+
+    &.croconaw {
+      background-position: -256px -192px;
+    }
+
+    &.feraligatr {
+      background-position: -288px -192px;
+    }
+
+    &.sentret {
+      background-position: -320px -192px;
+    }
+
+    &.furret {
+      background-position: -352px -192px;
+    }
+
+    &.hoothoot {
+      background-position: -384px -192px;
+    }
+
+    &.noctowl {
+      background-position: -416px -192px;
+    }
+
+    &.ledyba {
+      background-position: -448px -192px;
+    }
+
+    &.ledian {
+      background-position: -480px -192px;
+    }
+
+    &.spinarak {
+      background-position: -512px -192px;
+    }
+
+    &.ariados {
+      background-position: -544px -192px;
+    }
+
+    &.crobat {
+      background-position: -576px -192px;
+    }
+
+    &.chinchou {
+      background-position: -608px -192px;
+    }
+
+    &.lanturn {
+      background-position: -640px -192px;
+    }
+
+    &.pichu {
+      background-position: -672px -192px;
+    }
+
+    &.cleffa {
+      background-position: -704px -192px;
+    }
+
+    &.igglybuff {
+      background-position: -736px -192px;
+    }
+
+    &.togepi {
+      background-position: -768px -192px;
+    }
+
+    &.togetic {
+      background-position: 0px -224px;
+    }
+
+    &.natu {
+      background-position: -32px -224px;
+    }
+
+    &.xatu {
+      background-position: -64px -224px;
+    }
+
+    &.mareep {
+      background-position: -96px -224px;
+    }
+
+    &.flaaffy {
+      background-position: -128px -224px;
+    }
+
+    &.ampharos {
+      background-position: -160px -224px;
+    }
+
+    &.bellossom {
+      background-position: -192px -224px;
+    }
+
+    &.marill {
+      background-position: -224px -224px;
+    }
+
+    &.azumarill {
+      background-position: -256px -224px;
+    }
+
+    &.sudowoodo {
+      background-position: -288px -224px;
+    }
+
+    &.politoed {
+      background-position: -320px -224px;
+    }
+
+    &.hoppip {
+      background-position: -352px -224px;
+    }
+
+    &.skiploom {
+      background-position: -384px -224px;
+    }
+
+    &.jumpluff {
+      background-position: -416px -224px;
+    }
+
+    &.aipom {
+      background-position: -448px -224px;
+    }
+
+    &.sunkern {
+      background-position: -480px -224px;
+    }
+
+    &.sunflora {
+      background-position: -512px -224px;
+    }
+
+    &.yanma {
+      background-position: -544px -224px;
+    }
+
+    &.wooper {
+      background-position: -576px -224px;
+    }
+
+    &.quagsire {
+      background-position: -608px -224px;
+    }
+
+    &.espeon {
+      background-position: -640px -224px;
+    }
+
+    &.umbreon {
+      background-position: -672px -224px;
+    }
+
+    &.murkrow {
+      background-position: -704px -224px;
+    }
+
+    &.slowking {
+      background-position: -736px -224px;
+    }
+
+    &.misdreavus {
+      background-position: -768px -224px;
+    }
+
+    &.unown {
+      background-position: 0px -256px;
+    }
+
+    &.wobbuffet {
+      background-position: -32px -256px;
+    }
+
+    &.girafarig {
+      background-position: -64px -256px;
+    }
+
+    &.pineco {
+      background-position: -96px -256px;
+    }
+
+    &.forretress {
+      background-position: -128px -256px;
+    }
+
+    &.dunsparce {
+      background-position: -160px -256px;
+    }
+
+    &.gligar {
+      background-position: -192px -256px;
+    }
+
+    &.steelix {
+      background-position: -224px -256px;
+    }
+
+    &.snubbull {
+      background-position: -256px -256px;
+    }
+
+    &.granbull {
+      background-position: -288px -256px;
+    }
+
+    &.qwilfish {
+      background-position: -320px -256px;
+    }
+
+    &.scizor {
+      background-position: -352px -256px;
+    }
+
+    &.shuckle {
+      background-position: -384px -256px;
+    }
+
+    &.heracross {
+      background-position: -416px -256px;
+    }
+
+    &.sneasel {
+      background-position: -448px -256px;
+    }
+
+    &.teddiursa {
+      background-position: -480px -256px;
+    }
+
+    &.ursaring {
+      background-position: -512px -256px;
+    }
+
+    &.slugma {
+      background-position: -544px -256px;
+    }
+
+    &.magcargo {
+      background-position: -576px -256px;
+    }
+
+    &.swinub {
+      background-position: -608px -256px;
+    }
+
+    &.piloswine {
+      background-position: -640px -256px;
+    }
+
+    &.corsola {
+      background-position: -672px -256px;
+    }
+
+    &.remoraid {
+      background-position: -704px -256px;
+    }
+
+    &.octillery {
+      background-position: -736px -256px;
+    }
+
+    &.delibird {
+      background-position: -768px -256px;
+    }
+
+    &.mantine {
+      background-position: 0px -288px;
+    }
+
+    &.skarmory {
+      background-position: -32px -288px;
+    }
+
+    &.houndour {
+      background-position: -64px -288px;
+    }
+
+    &.houndoom {
+      background-position: -96px -288px;
+    }
+
+    &.kingdra {
+      background-position: -128px -288px;
+    }
+
+    &.phanpy {
+      background-position: -160px -288px;
+    }
+
+    &.donphan {
+      background-position: -192px -288px;
+    }
+
+    &.porygon2 {
+      background-position: -224px -288px;
+    }
+
+    &.stantler {
+      background-position: -256px -288px;
+    }
+
+    &.smeargle {
+      background-position: -288px -288px;
+    }
+
+    &.tyrogue {
+      background-position: -320px -288px;
+    }
+
+    &.hitmontop {
+      background-position: -352px -288px;
+    }
+
+    &.smoochum {
+      background-position: -384px -288px;
+    }
+
+    &.elekid {
+      background-position: -416px -288px;
+    }
+
+    &.magby {
+      background-position: -448px -288px;
+    }
+
+    &.miltank {
+      background-position: -480px -288px;
+    }
+
+    &.blissey {
+      background-position: -512px -288px;
+    }
+
+    &.raikou {
+      background-position: -544px -288px;
+    }
+
+    &.entei {
+      background-position: -576px -288px;
+    }
+
+    &.suicune {
+      background-position: -608px -288px;
+    }
+
+    &.larvitar {
+      background-position: -640px -288px;
+    }
+
+    &.pupitar {
+      background-position: -672px -288px;
+    }
+
+    &.tyranitar {
+      background-position: -704px -288px;
+    }
+
+    &.lugia {
+      background-position: -736px -288px;
+    }
+
+    &.ho-oh {
+      background-position: -768px -288px;
+    }
+
+    &.celebi {
+      background-position: 0px -320px;
+    }
+
+    &.treecko {
+      background-position: -32px -320px;
+    }
+
+    &.grovyle {
+      background-position: -64px -320px;
+    }
+
+    &.sceptile {
+      background-position: -96px -320px;
+    }
+
+    &.torchic {
+      background-position: -128px -320px;
+    }
+
+    &.combusken {
+      background-position: -160px -320px;
+    }
+
+    &.blaziken {
+      background-position: -192px -320px;
+    }
+
+    &.mudkip {
+      background-position: -224px -320px;
+    }
+
+    &.marshtomp {
+      background-position: -256px -320px;
+    }
+
+    &.swampert {
+      background-position: -288px -320px;
+    }
+
+    &.poochyena {
+      background-position: -320px -320px;
+    }
+
+    &.mightyena {
+      background-position: -352px -320px;
+    }
+
+    &.zigzagoon {
+      background-position: -384px -320px;
+    }
+
+    &.linoone {
+      background-position: -416px -320px;
+    }
+
+    &.wurmple {
+      background-position: -448px -320px;
+    }
+
+    &.silcoon {
+      background-position: -480px -320px;
+    }
+
+    &.beautifly {
+      background-position: -512px -320px;
+    }
+
+    &.cascoon {
+      background-position: -544px -320px;
+    }
+
+    &.dustox {
+      background-position: -576px -320px;
+    }
+
+    &.lotad {
+      background-position: -608px -320px;
+    }
+
+    &.lombre {
+      background-position: -640px -320px;
+    }
+
+    &.ludicolo {
+      background-position: -672px -320px;
+    }
+
+    &.seedot {
+      background-position: -704px -320px;
+    }
+
+    &.nuzleaf {
+      background-position: -736px -320px;
+    }
+
+    &.shiftry {
+      background-position: -768px -320px;
+    }
+
+    &.taillow {
+      background-position: 0px -352px;
+    }
+
+    &.swellow {
+      background-position: -32px -352px;
+    }
+
+    &.wingull {
+      background-position: -64px -352px;
+    }
+
+    &.pelipper {
+      background-position: -96px -352px;
+    }
+
+    &.ralts {
+      background-position: -128px -352px;
+    }
+
+    &.kirlia {
+      background-position: -160px -352px;
+    }
+
+    &.gardevoir {
+      background-position: -192px -352px;
+    }
+
+    &.surskit {
+      background-position: -224px -352px;
+    }
+
+    &.masquerain {
+      background-position: -256px -352px;
+    }
+
+    &.shroomish {
+      background-position: -288px -352px;
+    }
+
+    &.breloom {
+      background-position: -320px -352px;
+    }
+
+    &.slakoth {
+      background-position: -352px -352px;
+    }
+
+    &.vigoroth {
+      background-position: -384px -352px;
+    }
+
+    &.slaking {
+      background-position: -416px -352px;
+    }
+
+    &.nincada {
+      background-position: -448px -352px;
+    }
+
+    &.ninjask {
+      background-position: -480px -352px;
+    }
+
+    &.shedinja {
+      background-position: -512px -352px;
+    }
+
+    &.whismur {
+      background-position: -544px -352px;
+    }
+
+    &.loudred {
+      background-position: -576px -352px;
+    }
+
+    &.exploud {
+      background-position: -608px -352px;
+    }
+
+    &.makuhita {
+      background-position: -640px -352px;
+    }
+
+    &.hariyama {
+      background-position: -672px -352px;
+    }
+
+    &.azurill {
+      background-position: -704px -352px;
+    }
+
+    &.nosepass {
+      background-position: -736px -352px;
+    }
+
+    &.skitty {
+      background-position: -768px -352px;
+    }
+
+    &.delcatty {
+      background-position: 0px -384px;
+    }
+
+    &.sableye {
+      background-position: -32px -384px;
+    }
+
+    &.mawile {
+      background-position: -64px -384px;
+    }
+
+    &.aron {
+      background-position: -96px -384px;
+    }
+
+    &.lairon {
+      background-position: -128px -384px;
+    }
+
+    &.aggron {
+      background-position: -160px -384px;
+    }
+
+    &.meditite {
+      background-position: -192px -384px;
+    }
+
+    &.medicham {
+      background-position: -224px -384px;
+    }
+
+    &.electrike {
+      background-position: -256px -384px;
+    }
+
+    &.manectric {
+      background-position: -288px -384px;
+    }
+
+    &.plusle {
+      background-position: -320px -384px;
+    }
+
+    &.minun {
+      background-position: -352px -384px;
+    }
+
+    &.volbeat {
+      background-position: -384px -384px;
+    }
+
+    &.illumise {
+      background-position: -416px -384px;
+    }
+
+    &.roselia {
+      background-position: -448px -384px;
+    }
+
+    &.gulpin {
+      background-position: -480px -384px;
+    }
+
+    &.swalot {
+      background-position: -512px -384px;
+    }
+
+    &.carvanha {
+      background-position: -544px -384px;
+    }
+
+    &.sharpedo {
+      background-position: -576px -384px;
+    }
+
+    &.wailmer {
+      background-position: -608px -384px;
+    }
+
+    &.wailord {
+      background-position: -640px -384px;
+    }
+
+    &.numel {
+      background-position: -672px -384px;
+    }
+
+    &.camerupt {
+      background-position: -704px -384px;
+    }
+
+    &.torkoal {
+      background-position: -736px -384px;
+    }
+
+    &.spoink {
+      background-position: -768px -384px;
+    }
+
+    &.grumpig {
+      background-position: 0px -416px;
+    }
+
+    &.spinda {
+      background-position: -32px -416px;
+    }
+
+    &.trapinch {
+      background-position: -64px -416px;
+    }
+
+    &.vibrava {
+      background-position: -96px -416px;
+    }
+
+    &.flygon {
+      background-position: -128px -416px;
+    }
+
+    &.cacnea {
+      background-position: -160px -416px;
+    }
+
+    &.cacturne {
+      background-position: -192px -416px;
+    }
+
+    &.swablu {
+      background-position: -224px -416px;
+    }
+
+    &.altaria {
+      background-position: -256px -416px;
+    }
+
+    &.zangoose {
+      background-position: -288px -416px;
+    }
+
+    &.seviper {
+      background-position: -320px -416px;
+    }
+
+    &.lunatone {
+      background-position: -352px -416px;
+    }
+
+    &.solrock {
+      background-position: -384px -416px;
+    }
+
+    &.barboach {
+      background-position: -416px -416px;
+    }
+
+    &.whiscash {
+      background-position: -448px -416px;
+    }
+
+    &.corphish {
+      background-position: -480px -416px;
+    }
+
+    &.crawdaunt {
+      background-position: -512px -416px;
+    }
+
+    &.baltoy {
+      background-position: -544px -416px;
+    }
+
+    &.claydol {
+      background-position: -576px -416px;
+    }
+
+    &.lileep {
+      background-position: -608px -416px;
+    }
+
+    &.cradily {
+      background-position: -640px -416px;
+    }
+
+    &.anorith {
+      background-position: -672px -416px;
+    }
+
+    &.armaldo {
+      background-position: -704px -416px;
+    }
+
+    &.feebas {
+      background-position: -736px -416px;
+    }
+
+    &.milotic {
+      background-position: -768px -416px;
+    }
+
+    &.castform {
+      background-position: 0px -448px;
+    }
+
+    &.kecleon {
+      background-position: -32px -448px;
+    }
+
+    &.shuppet {
+      background-position: -64px -448px;
+    }
+
+    &.banette {
+      background-position: -96px -448px;
+    }
+
+    &.duskull {
+      background-position: -128px -448px;
+    }
+
+    &.dusclops {
+      background-position: -160px -448px;
+    }
+
+    &.tropius {
+      background-position: -192px -448px;
+    }
+
+    &.chimecho {
+      background-position: -224px -448px;
+    }
+
+    &.absol {
+      background-position: -256px -448px;
+    }
+
+    &.wynaut {
+      background-position: -288px -448px;
+    }
+
+    &.snorunt {
+      background-position: -320px -448px;
+    }
+
+    &.glalie {
+      background-position: -352px -448px;
+    }
+
+    &.spheal {
+      background-position: -384px -448px;
+    }
+
+    &.sealeo {
+      background-position: -416px -448px;
+    }
+
+    &.walrein {
+      background-position: -448px -448px;
+    }
+
+    &.clamperl {
+      background-position: -480px -448px;
+    }
+
+    &.huntail {
+      background-position: -512px -448px;
+    }
+
+    &.gorebyss {
+      background-position: -544px -448px;
+    }
+
+    &.relicanth {
+      background-position: -576px -448px;
+    }
+
+    &.luvdisc {
+      background-position: -608px -448px;
+    }
+
+    &.bagon {
+      background-position: -640px -448px;
+    }
+
+    &.shelgon {
+      background-position: -672px -448px;
+    }
+
+    &.salamence {
+      background-position: -704px -448px;
+    }
+
+    &.beldum {
+      background-position: -736px -448px;
+    }
+
+    &.metang {
+      background-position: -768px -448px;
+    }
+
+    &.metagross {
+      background-position: 0px -480px;
+    }
+
+    &.regirock {
+      background-position: -32px -480px;
+    }
+
+    &.regice {
+      background-position: -64px -480px;
+    }
+
+    &.registeel {
+      background-position: -96px -480px;
+    }
+
+    &.latias {
+      background-position: -128px -480px;
+    }
+
+    &.latios {
+      background-position: -160px -480px;
+    }
+
+    &.kyogre {
+      background-position: -192px -480px;
+    }
+
+    &.groudon {
+      background-position: -224px -480px;
+    }
+
+    &.rayquaza {
+      background-position: -256px -480px;
+    }
+
+    &.jirachi {
+      background-position: -288px -480px;
+    }
+
+    &.deoxys {
+      background-position: -320px -480px;
+    }
+
+    &.turtwig {
+      background-position: -352px -480px;
+    }
+
+    &.grotle {
+      background-position: -384px -480px;
+    }
+
+    &.torterra {
+      background-position: -416px -480px;
+    }
+
+    &.chimchar {
+      background-position: -448px -480px;
+    }
+
+    &.monferno {
+      background-position: -480px -480px;
+    }
+
+    &.infernape {
+      background-position: -512px -480px;
+    }
+
+    &.piplup {
+      background-position: -544px -480px;
+    }
+
+    &.prinplup {
+      background-position: -576px -480px;
+    }
+
+    &.empoleon {
+      background-position: -608px -480px;
+    }
+
+    &.starly {
+      background-position: -640px -480px;
+    }
+
+    &.staravia {
+      background-position: -672px -480px;
+    }
+
+    &.staraptor {
+      background-position: -704px -480px;
+    }
+
+    &.bidoof {
+      background-position: -736px -480px;
+    }
+
+    &.bibarel {
+      background-position: -768px -480px;
+    }
+
+    &.kricketot {
+      background-position: 0px -512px;
+    }
+
+    &.kricketune {
+      background-position: -32px -512px;
+    }
+
+    &.shinx {
+      background-position: -64px -512px;
+    }
+
+    &.luxio {
+      background-position: -96px -512px;
+    }
+
+    &.luxray {
+      background-position: -128px -512px;
+    }
+
+    &.budew {
+      background-position: -160px -512px;
+    }
+
+    &.roserade {
+      background-position: -192px -512px;
+    }
+
+    &.cranidos {
+      background-position: -224px -512px;
+    }
+
+    &.rampardos {
+      background-position: -256px -512px;
+    }
+
+    &.shieldon {
+      background-position: -288px -512px;
+    }
+
+    &.bastiodon {
+      background-position: -320px -512px;
+    }
+
+    &.burmy {
+      background-position: -352px -512px;
+    }
+
+    &.wormadam {
+      background-position: -384px -512px;
+    }
+
+    &.mothim {
+      background-position: -416px -512px;
+    }
+
+    &.combee {
+      background-position: -448px -512px;
+    }
+
+    &.vespiquen {
+      background-position: -480px -512px;
+    }
+
+    &.pachirisu {
+      background-position: -512px -512px;
+    }
+
+    &.buizel {
+      background-position: -544px -512px;
+    }
+
+    &.floatzel {
+      background-position: -576px -512px;
+    }
+
+    &.cherubi {
+      background-position: -608px -512px;
+    }
+
+    &.cherrim {
+      background-position: -640px -512px;
+    }
+
+    &.shellos {
+      background-position: -672px -512px;
+    }
+
+    &.gastrodon {
+      background-position: -704px -512px;
+    }
+
+    &.ambipom {
+      background-position: -736px -512px;
+    }
+
+    &.drifloon {
+      background-position: -768px -512px;
+    }
+
+    &.drifblim {
+      background-position: 0px -544px;
+    }
+
+    &.buneary {
+      background-position: -32px -544px;
+    }
+
+    &.lopunny {
+      background-position: -64px -544px;
+    }
+
+    &.mismagius {
+      background-position: -96px -544px;
+    }
+
+    &.honchkrow {
+      background-position: -128px -544px;
+    }
+
+    &.glameow {
+      background-position: -160px -544px;
+    }
+
+    &.purugly {
+      background-position: -192px -544px;
+    }
+
+    &.chingling {
+      background-position: -224px -544px;
+    }
+
+    &.stunky {
+      background-position: -256px -544px;
+    }
+
+    &.skuntank {
+      background-position: -288px -544px;
+    }
+
+    &.bronzor {
+      background-position: -320px -544px;
+    }
+
+    &.bronzong {
+      background-position: -352px -544px;
+    }
+
+    &.bonsly {
+      background-position: -384px -544px;
+    }
+
+    &.mime-jr {
+      background-position: -416px -544px;
+    }
+
+    &.happiny {
+      background-position: -448px -544px;
+    }
+
+    &.chatot {
+      background-position: -480px -544px;
+    }
+
+    &.spiritomb {
+      background-position: -512px -544px;
+    }
+
+    &.gible {
+      background-position: -544px -544px;
+    }
+
+    &.gabite {
+      background-position: -576px -544px;
+    }
+
+    &.garchomp {
+      background-position: -608px -544px;
+    }
+
+    &.munchlax {
+      background-position: -640px -544px;
+    }
+
+    &.riolu {
+      background-position: -672px -544px;
+    }
+
+    &.lucario {
+      background-position: -704px -544px;
+    }
+
+    &.hippopotas {
+      background-position: -736px -544px;
+    }
+
+    &.hippowdon {
+      background-position: -768px -544px;
+    }
+
+    &.skorupi {
+      background-position: 0px -576px;
+    }
+
+    &.drapion {
+      background-position: -32px -576px;
+    }
+
+    &.croagunk {
+      background-position: -64px -576px;
+    }
+
+    &.toxicroak {
+      background-position: -96px -576px;
+    }
+
+    &.carnivine {
+      background-position: -128px -576px;
+    }
+
+    &.finneon {
+      background-position: -160px -576px;
+    }
+
+    &.lumineon {
+      background-position: -192px -576px;
+    }
+
+    &.mantyke {
+      background-position: -224px -576px;
+    }
+
+    &.snover {
+      background-position: -256px -576px;
+    }
+
+    &.abomasnow {
+      background-position: -288px -576px;
+    }
+
+    &.weavile {
+      background-position: -320px -576px;
+    }
+
+    &.magnezone {
+      background-position: -352px -576px;
+    }
+
+    &.lickilicky {
+      background-position: -384px -576px;
+    }
+
+    &.rhyperior {
+      background-position: -416px -576px;
+    }
+
+    &.tangrowth {
+      background-position: -448px -576px;
+    }
+
+    &.electivire {
+      background-position: -480px -576px;
+    }
+
+    &.magmortar {
+      background-position: -512px -576px;
+    }
+
+    &.togekiss {
+      background-position: -544px -576px;
+    }
+
+    &.yanmega {
+      background-position: -576px -576px;
+    }
+
+    &.leafeon {
+      background-position: -608px -576px;
+    }
+
+    &.glaceon {
+      background-position: -640px -576px;
+    }
+
+    &.gliscor {
+      background-position: -672px -576px;
+    }
+
+    &.mamoswine {
+      background-position: -704px -576px;
+    }
+
+    &.porygon-z {
+      background-position: -736px -576px;
+    }
+
+    &.gallade {
+      background-position: -768px -576px;
+    }
+
+    &.probopass {
+      background-position: 0px -608px;
+    }
+
+    &.dusknoir {
+      background-position: -32px -608px;
+    }
+
+    &.froslass {
+      background-position: -64px -608px;
+    }
+
+    &.rotom {
+      background-position: -96px -608px;
+    }
+
+    &.uxie {
+      background-position: -128px -608px;
+    }
+
+    &.mesprit {
+      background-position: -160px -608px;
+    }
+
+    &.azelf {
+      background-position: -192px -608px;
+    }
+
+    &.dialga {
+      background-position: -224px -608px;
+    }
+
+    &.palkia {
+      background-position: -256px -608px;
+    }
+
+    &.heatran {
+      background-position: -288px -608px;
+    }
+
+    &.regigigas {
+      background-position: -320px -608px;
+    }
+
+    &.giratina {
+      background-position: -352px -608px;
+    }
+
+    &.cresselia {
+      background-position: -384px -608px;
+    }
+
+    &.phione {
+      background-position: -416px -608px;
+    }
+
+    &.manaphy {
+      background-position: -448px -608px;
+    }
+
+    &.darkrai {
+      background-position: -480px -608px;
+    }
+
+    &.shaymin {
+      background-position: -512px -608px;
+    }
+
+    &.arceus {
+      background-position: -544px -608px;
+    }
+
+    &.victini {
+      background-position: -576px -608px;
+    }
+
+    &.snivy {
+      background-position: -608px -608px;
+    }
+
+    &.servine {
+      background-position: -640px -608px;
+    }
+
+    &.serperior {
+      background-position: -672px -608px;
+    }
+
+    &.tepig {
+      background-position: -704px -608px;
+    }
+
+    &.pignite {
+      background-position: -736px -608px;
+    }
+
+    &.emboar {
+      background-position: -768px -608px;
+    }
+
+    &.oshawott {
+      background-position: 0px -640px;
+    }
+
+    &.dewott {
+      background-position: -32px -640px;
+    }
+
+    &.samurott {
+      background-position: -64px -640px;
+    }
+
+    &.patrat {
+      background-position: -96px -640px;
+    }
+
+    &.watchog {
+      background-position: -128px -640px;
+    }
+
+    &.lillipup {
+      background-position: -160px -640px;
+    }
+
+    &.herdier {
+      background-position: -192px -640px;
+    }
+
+    &.stoutland {
+      background-position: -224px -640px;
+    }
+
+    &.purrloin {
+      background-position: -256px -640px;
+    }
+
+    &.liepard {
+      background-position: -288px -640px;
+    }
+
+    &.pansage {
+      background-position: -320px -640px;
+    }
+
+    &.simisage {
+      background-position: -352px -640px;
+    }
+
+    &.pansear {
+      background-position: -384px -640px;
+    }
+
+    &.simisear {
+      background-position: -416px -640px;
+    }
+
+    &.panpour {
+      background-position: -448px -640px;
+    }
+
+    &.simipour {
+      background-position: -480px -640px;
+    }
+
+    &.munna {
+      background-position: -512px -640px;
+    }
+
+    &.musharna {
+      background-position: -544px -640px;
+    }
+
+    &.pidove {
+      background-position: -576px -640px;
+    }
+
+    &.tranquill {
+      background-position: -608px -640px;
+    }
+
+    &.unfezant {
+      background-position: -640px -640px;
+    }
+
+    &.blitzle {
+      background-position: -672px -640px;
+    }
+
+    &.zebstrika {
+      background-position: -704px -640px;
+    }
+
+    &.roggenrola {
+      background-position: -736px -640px;
+    }
+
+    &.boldore {
+      background-position: -768px -640px;
+    }
+
+    &.gigalith {
+      background-position: 0px -672px;
+    }
+
+    &.woobat {
+      background-position: -32px -672px;
+    }
+
+    &.swoobat {
+      background-position: -64px -672px;
+    }
+
+    &.drilbur {
+      background-position: -96px -672px;
+    }
+
+    &.excadrill {
+      background-position: -128px -672px;
+    }
+
+    &.audino {
+      background-position: -160px -672px;
+    }
+
+    &.timburr {
+      background-position: -192px -672px;
+    }
+
+    &.gurdurr {
+      background-position: -224px -672px;
+    }
+
+    &.conkeldurr {
+      background-position: -256px -672px;
+    }
+
+    &.tympole {
+      background-position: -288px -672px;
+    }
+
+    &.palpitoad {
+      background-position: -320px -672px;
+    }
+
+    &.seismitoad {
+      background-position: -352px -672px;
+    }
+
+    &.throh {
+      background-position: -384px -672px;
+    }
+
+    &.sawk {
+      background-position: -416px -672px;
+    }
+
+    &.sewaddle {
+      background-position: -448px -672px;
+    }
+
+    &.swadloon {
+      background-position: -480px -672px;
+    }
+
+    &.leavanny {
+      background-position: -512px -672px;
+    }
+
+    &.venipede {
+      background-position: -544px -672px;
+    }
+
+    &.whirlipede {
+      background-position: -576px -672px;
+    }
+
+    &.scolipede {
+      background-position: -608px -672px;
+    }
+
+    &.cottonee {
+      background-position: -640px -672px;
+    }
+
+    &.whimsicott {
+      background-position: -672px -672px;
+    }
+
+    &.petilil {
+      background-position: -704px -672px;
+    }
+
+    &.lilligant {
+      background-position: -736px -672px;
+    }
+
+    &.basculin {
+      background-position: -768px -672px;
+    }
+
+    &.sandile {
+      background-position: 0px -704px;
+    }
+
+    &.krokorok {
+      background-position: -32px -704px;
+    }
+
+    &.krookodile {
+      background-position: -64px -704px;
+    }
+
+    &.darumaka {
+      background-position: -96px -704px;
+    }
+
+    &.darmanitan {
+      background-position: -128px -704px;
+    }
+
+    &.maractus {
+      background-position: -160px -704px;
+    }
+
+    &.dwebble {
+      background-position: -192px -704px;
+    }
+
+    &.crustle {
+      background-position: -224px -704px;
+    }
+
+    &.scraggy {
+      background-position: -256px -704px;
+    }
+
+    &.scrafty {
+      background-position: -288px -704px;
+    }
+
+    &.sigilyph {
+      background-position: -320px -704px;
+    }
+
+    &.yamask {
+      background-position: -352px -704px;
+    }
+
+    &.cofagrigus {
+      background-position: -384px -704px;
+    }
+
+    &.tirtouga {
+      background-position: -416px -704px;
+    }
+
+    &.carracosta {
+      background-position: -448px -704px;
+    }
+
+    &.archen {
+      background-position: -480px -704px;
+    }
+
+    &.archeops {
+      background-position: -512px -704px;
+    }
+
+    &.trubbish {
+      background-position: -544px -704px;
+    }
+
+    &.garbodor {
+      background-position: -576px -704px;
+    }
+
+    &.zorua {
+      background-position: -608px -704px;
+    }
+
+    &.zoroark {
+      background-position: -640px -704px;
+    }
+
+    &.minccino {
+      background-position: -672px -704px;
+    }
+
+    &.cinccino {
+      background-position: -704px -704px;
+    }
+
+    &.gothita {
+      background-position: -736px -704px;
+    }
+
+    &.gothorita {
+      background-position: -768px -704px;
+    }
+
+    &.gothitelle {
+      background-position: 0px -736px;
+    }
+
+    &.solosis {
+      background-position: -32px -736px;
+    }
+
+    &.duosion {
+      background-position: -64px -736px;
+    }
+
+    &.reuniclus {
+      background-position: -96px -736px;
+    }
+
+    &.ducklett {
+      background-position: -128px -736px;
+    }
+
+    &.swanna {
+      background-position: -160px -736px;
+    }
+
+    &.vanillite {
+      background-position: -192px -736px;
+    }
+
+    &.vanillish {
+      background-position: -224px -736px;
+    }
+
+    &.vanilluxe {
+      background-position: -256px -736px;
+    }
+
+    &.deerling {
+      background-position: -288px -736px;
+    }
+
+    &.sawsbuck {
+      background-position: -320px -736px;
+    }
+
+    &.emolga {
+      background-position: -352px -736px;
+    }
+
+    &.karrablast {
+      background-position: -384px -736px;
+    }
+
+    &.escavalier {
+      background-position: -416px -736px;
+    }
+
+    &.foongus {
+      background-position: -448px -736px;
+    }
+
+    &.amoonguss {
+      background-position: -480px -736px;
+    }
+
+    &.frillish {
+      background-position: -512px -736px;
+    }
+
+    &.jellicent {
+      background-position: -544px -736px;
+    }
+
+    &.alomomola {
+      background-position: -576px -736px;
+    }
+
+    &.joltik {
+      background-position: -608px -736px;
+    }
+
+    &.galvantula {
+      background-position: -640px -736px;
+    }
+
+    &.ferroseed {
+      background-position: -672px -736px;
+    }
+
+    &.ferrothorn {
+      background-position: -704px -736px;
+    }
+
+    &.klink {
+      background-position: -736px -736px;
+    }
+
+    &.klang {
+      background-position: -768px -736px;
+    }
+
+    &.klinklang {
+      background-position: 0px -768px;
+    }
+
+    &.tynamo {
+      background-position: -32px -768px;
+    }
+
+    &.eelektrik {
+      background-position: -64px -768px;
+    }
+
+    &.eelektross {
+      background-position: -96px -768px;
+    }
+
+    &.elgyem {
+      background-position: -128px -768px;
+    }
+
+    &.beheeyem {
+      background-position: -160px -768px;
+    }
+
+    &.litwick {
+      background-position: -192px -768px;
+    }
+
+    &.lampent {
+      background-position: -224px -768px;
+    }
+
+    &.chandelure {
+      background-position: -256px -768px;
+    }
+
+    &.axew {
+      background-position: -288px -768px;
+    }
+
+    &.fraxure {
+      background-position: -320px -768px;
+    }
+
+    &.haxorus {
+      background-position: -352px -768px;
+    }
+
+    &.cubchoo {
+      background-position: -384px -768px;
+    }
+
+    &.beartic {
+      background-position: -416px -768px;
+    }
+
+    &.cryogonal {
+      background-position: -448px -768px;
+    }
+
+    &.shelmet {
+      background-position: -480px -768px;
+    }
+
+    &.accelgor {
+      background-position: -512px -768px;
+    }
+
+    &.stunfisk {
+      background-position: -544px -768px;
+    }
+
+    &.mienfoo {
+      background-position: -576px -768px;
+    }
+
+    &.mienshao {
+      background-position: -608px -768px;
+    }
+
+    &.druddigon {
+      background-position: -640px -768px;
+    }
+
+    &.golett {
+      background-position: -672px -768px;
+    }
+
+    &.golurk {
+      background-position: -704px -768px;
+    }
+
+    &.pawniard {
+      background-position: -736px -768px;
+    }
+
+    &.bisharp {
+      background-position: -768px -768px;
+    }
+
+    &.bouffalant {
+      background-position: 0px -800px;
+    }
+
+    &.rufflet {
+      background-position: -32px -800px;
+    }
+
+    &.braviary {
+      background-position: -64px -800px;
+    }
+
+    &.vullaby {
+      background-position: -96px -800px;
+    }
+
+    &.mandibuzz {
+      background-position: -128px -800px;
+    }
+
+    &.heatmor {
+      background-position: -160px -800px;
+    }
+
+    &.durant {
+      background-position: -192px -800px;
+    }
+
+    &.deino {
+      background-position: -224px -800px;
+    }
+
+    &.zweilous {
+      background-position: -256px -800px;
+    }
+
+    &.hydreigon {
+      background-position: -288px -800px;
+    }
+
+    &.larvesta {
+      background-position: -320px -800px;
+    }
+
+    &.volcarona {
+      background-position: -352px -800px;
+    }
+
+    &.cobalion {
+      background-position: -384px -800px;
+    }
+
+    &.terrakion {
+      background-position: -416px -800px;
+    }
+
+    &.virizion {
+      background-position: -448px -800px;
+    }
+
+    &.tornadus {
+      background-position: -480px -800px;
+    }
+
+    &.thundurus {
+      background-position: -512px -800px;
+    }
+
+    &.reshiram {
+      background-position: -544px -800px;
+    }
+
+    &.zekrom {
+      background-position: -576px -800px;
+    }
+
+    &.landorus {
+      background-position: -608px -800px;
+    }
+
+    &.kyurem {
+      background-position: -640px -800px;
+    }
+
+    &.keldeo {
+      background-position: -672px -800px;
+    }
+
+    &.meloetta {
+      background-position: -704px -800px;
+    }
+
+    &.genesect {
+      background-position: -736px -800px;
+    }
+
+    &.chespin {
+      background-position: -768px -800px;
+    }
+
+    &.quilladin {
+      background-position: 0px -832px;
+    }
+
+    &.chesnaught {
+      background-position: -32px -832px;
+    }
+
+    &.fennekin {
+      background-position: -64px -832px;
+    }
+
+    &.braixen {
+      background-position: -96px -832px;
+    }
+
+    &.delphox {
+      background-position: -128px -832px;
+    }
+
+    &.froakie {
+      background-position: -160px -832px;
+    }
+
+    &.frogadier {
+      background-position: -192px -832px;
+    }
+
+    &.greninja {
+      background-position: -224px -832px;
+    }
+
+    &.bunnelby {
+      background-position: -256px -832px;
+    }
+
+    &.diggersby {
+      background-position: -288px -832px;
+    }
+
+    &.fletchling {
+      background-position: -320px -832px;
+    }
+
+    &.fletchinder {
+      background-position: -352px -832px;
+    }
+
+    &.talonflame {
+      background-position: -384px -832px;
+    }
+
+    &.scatterbug {
+      background-position: -416px -832px;
+    }
+
+    &.spewpa {
+      background-position: -448px -832px;
+    }
+
+    &.vivillon {
+      background-position: -480px -832px;
+    }
+
+    &.litleo {
+      background-position: -512px -832px;
+    }
+
+    &.pyroar {
+      background-position: -544px -832px;
+    }
+
+    &.flabébé {
+      background-position: -576px -832px;
+    }
+
+    &.floette {
+      background-position: -608px -832px;
+    }
+
+    &.florges {
+      background-position: -640px -832px;
+    }
+
+    &.skiddo {
+      background-position: -672px -832px;
+    }
+
+    &.gogoat {
+      background-position: -704px -832px;
+    }
+
+    &.pancham {
+      background-position: -736px -832px;
+    }
+
+    &.pangoro {
+      background-position: -768px -832px;
+    }
+
+    &.furfrou {
+      background-position: 0px -864px;
+    }
+
+    &.espurr {
+      background-position: -32px -864px;
+    }
+
+    &.meowstic {
+      background-position: -64px -864px;
+    }
+
+    &.honedge {
+      background-position: -96px -864px;
+    }
+
+    &.doublade {
+      background-position: -128px -864px;
+    }
+
+    &.aegislash {
+      background-position: -160px -864px;
+    }
+
+    &.spritzee {
+      background-position: -192px -864px;
+    }
+
+    &.aromatisse {
+      background-position: -224px -864px;
+    }
+
+    &.swirlix {
+      background-position: -256px -864px;
+    }
+
+    &.slurpuff {
+      background-position: -288px -864px;
+    }
+
+    &.inkay {
+      background-position: -320px -864px;
+    }
+
+    &.malamar {
+      background-position: -352px -864px;
+    }
+
+    &.binacle {
+      background-position: -384px -864px;
+    }
+
+    &.barbaracle {
+      background-position: -416px -864px;
+    }
+
+    &.skrelp {
+      background-position: -448px -864px;
+    }
+
+    &.dragalge {
+      background-position: -480px -864px;
+    }
+
+    &.clauncher {
+      background-position: -512px -864px;
+    }
+
+    &.clawitzer {
+      background-position: -544px -864px;
+    }
+
+    &.helioptile {
+      background-position: -576px -864px;
+    }
+
+    &.heliolisk {
+      background-position: -608px -864px;
+    }
+
+    &.tyrunt {
+      background-position: -640px -864px;
+    }
+
+    &.tyrantrum {
+      background-position: -672px -864px;
+    }
+
+    &.amaura {
+      background-position: -704px -864px;
+    }
+
+    &.aurorus {
+      background-position: -736px -864px;
+    }
+
+    &.sylveon {
+      background-position: -768px -864px;
+    }
+
+    &.hawlucha {
+      background-position: 0px -896px;
+    }
+
+    &.dedenne {
+      background-position: -32px -896px;
+    }
+
+    &.carbink {
+      background-position: -64px -896px;
+    }
+
+    &.goomy {
+      background-position: -96px -896px;
+    }
+
+    &.sliggoo {
+      background-position: -128px -896px;
+    }
+
+    &.goodra {
+      background-position: -160px -896px;
+    }
+
+    &.klefki {
+      background-position: -192px -896px;
+    }
+
+    &.phantump {
+      background-position: -224px -896px;
+    }
+
+    &.trevenant {
+      background-position: -256px -896px;
+    }
+
+    &.pumpkaboo {
+      background-position: -288px -896px;
+    }
+
+    &.gourgeist {
+      background-position: -320px -896px;
+    }
+
+    &.bergmite {
+      background-position: -352px -896px;
+    }
+
+    &.avalugg {
+      background-position: -384px -896px;
+    }
+
+    &.noibat {
+      background-position: -416px -896px;
+    }
+
+    &.noivern {
+      background-position: -448px -896px;
+    }
+
+    &.xerneas {
+      background-position: -480px -896px;
+    }
+
+    &.yveltal {
+      background-position: -512px -896px;
+    }
+
+    &.zygarde {
+      background-position: -544px -896px;
+    }
+
+    &.diancie {
+      background-position: -576px -896px;
+    }
+
+    &.hoopa  {
+      background-position: -608px -896px;
+    }
+
+    &.volcanion {
+      background-position: -640px -896px;
+    }
+
+    &.rowlet {
+      background-position: -672px -896px;
+    }
+
+    &.dartrix {
+      background-position: -704px -896px;
+    }
+
+    &.decidueye {
+      background-position: -736px -896px;
+    }
+
+    &.litten {
+      background-position: -768px -896px;
+    }
+
+    &.torracat {
+      background-position: 0px -928px;
+    }
+
+    &.incineroar {
+      background-position: -32px -928px;
+    }
+
+    &.popplio {
+      background-position: -64px -928px;
+    }
+
+    &.brionne {
+      background-position: -96px -928px;
+    }
+
+    &.primarina {
+      background-position: -128px -928px;
+    }
+
+    &.pikipek {
+      background-position: -160px -928px;
+    }
+
+    &.trumbeak {
+      background-position: -192px -928px;
+    }
+
+    &.toucannon {
+      background-position: -224px -928px;
+    }
+
+    &.yungoos {
+      background-position: -256px -928px;
+    }
+
+    &.gumshoos {
+      background-position: -288px -928px;
+    }
+
+    &.grubbin {
+      background-position: -320px -928px;
+    }
+
+    &.charjabug {
+      background-position: -352px -928px;
+    }
+
+    &.vikavolt {
+      background-position: -384px -928px;
+    }
+
+    &.crabrawler {
+      background-position: -416px -928px;
+    }
+
+    &.crabominable {
+      background-position: -448px -928px;
+    }
+
+    &.oricorio {
+      background-position: -480px -928px;
+    }
+
+    &.cutiefly {
+      background-position: -512px -928px;
+    }
+
+    &.ribombee {
+      background-position: -544px -928px;
+    }
+
+    &.rockruff {
+      background-position: -576px -928px;
+    }
+
+    &.lycanroc {
+      background-position: -608px -928px;
+    }
+
+    &.wishiwashi {
+      background-position: -640px -928px;
+    }
+
+    &.mareanie {
+      background-position: -672px -928px;
+    }
+
+    &.toxapex {
+      background-position: -704px -928px;
+    }
+
+    &.mudbray {
+      background-position: -736px -928px;
+    }
+
+    &.mudsdale {
+      background-position: -768px -928px;
+    }
+
+    &.dewpider {
+      background-position: 0px -960px;
+    }
+
+    &.araquanid {
+      background-position: -32px -960px;
+    }
+
+    &.fomantis {
+      background-position: -64px -960px;
+    }
+
+    &.lurantis {
+      background-position: -96px -960px;
+    }
+
+    &.morelull {
+      background-position: -128px -960px;
+    }
+
+    &.shiinotic {
+      background-position: -160px -960px;
+    }
+
+    &.salandit {
+      background-position: -192px -960px;
+    }
+
+    &.salazzle {
+      background-position: -224px -960px;
+    }
+
+    &.stufful {
+      background-position: -256px -960px;
+    }
+
+    &.bewear {
+      background-position: -288px -960px;
+    }
+
+    &.bounsweet {
+      background-position: -320px -960px;
+    }
+
+    &.steenee {
+      background-position: -352px -960px;
+    }
+
+    &.tsareena {
+      background-position: -384px -960px;
+    }
+
+    &.comfey {
+      background-position: -416px -960px;
+    }
+
+    &.oranguru {
+      background-position: -448px -960px;
+    }
+
+    &.passimian {
+      background-position: -480px -960px;
+    }
+
+    &.wimpod {
+      background-position: -512px -960px;
+    }
+
+    &.golisopod {
+      background-position: -544px -960px;
+    }
+
+    &.sandygast {
+      background-position: -576px -960px;
+    }
+
+    &.palossand {
+      background-position: -608px -960px;
+    }
+
+    &.pyukumuku {
+      background-position: -640px -960px;
+    }
+
+    &.type-null {
+      background-position: -672px -960px;
+    }
+
+    &.silvally {
+      background-position: -704px -960px;
+    }
+
+    &.minior {
+      background-position: -736px -960px;
+    }
+
+    &.komala {
+      background-position: -768px -960px;
+    }
+
+    &.turtonator {
+      background-position: 0px -992px;
+    }
+
+    &.togedemaru {
+      background-position: -32px -992px;
+    }
+
+    &.mimikyu {
+      background-position: -64px -992px;
+    }
+
+    &.bruxish {
+      background-position: -96px -992px;
+    }
+
+    &.drampa {
+      background-position: -128px -992px;
+    }
+
+    &.dhelmise {
+      background-position: -160px -992px;
+    }
+
+    &.jangmo-o {
+      background-position: -192px -992px;
+    }
+
+    &.hakamo-o {
+      background-position: -224px -992px;
+    }
+
+    &.kommo-o {
+      background-position: -256px -992px;
+    }
+
+    &.tapu-koko {
+      background-position: -288px -992px;
+    }
+
+    &.tapu-lele {
+      background-position: -320px -992px;
+    }
+
+    &.tapu-bulu {
+      background-position: -352px -992px;
+    }
+
+    &.tapu-fini {
+      background-position: -384px -992px;
+    }
+
+    &.cosmog {
+      background-position: -416px -992px;
+    }
+
+    &.cosmoem {
+      background-position: -448px -992px;
+    }
+
+    &.solgaleo {
+      background-position: -480px -992px;
+    }
+
+    &.lunala {
+      background-position: -512px -992px;
+    }
+
+    &.nihilego {
+      background-position: -544px -992px;
+    }
+
+    &.buzzwole {
+      background-position: -576px -992px;
+    }
+
+    &.pheromosa {
+      background-position: -608px -992px;
+    }
+
+    &.xurkitree {
+      background-position: -640px -992px;
+    }
+
+    &.celesteela {
+      background-position: -672px -992px;
+    }
+
+    &.kartana {
+      background-position: -704px -992px;
+    }
+
+    &.guzzlord {
+      background-position: -736px -992px;
+    }
+
+    &.necrozma {
+      background-position: -768px -992px;
+    }
+
+    &.magearna {
+      background-position: 0px -1024px;
+    }
+
+    &.marshadow {
+      background-position: -32px -1024px;
     }
   }
 }

@@ -1,221 +1,84 @@
-html {
-    height: 100%;
-    margin: 0;
-  //overflow: hidden;
-    width: 100%;
-}
 
-body {
-    color: $primary-text-color;
-    font: $font-sans-serif;
-    height: 100%;
-    line-height: 1.846153846;
-    margin: 0;
-    position: absolute;
-    width: 100%;
-}
-
-.top-bar {
-  background: $white;
-  box-shadow: 0 1px 3px 0 $disabled-text-color;
-  height: 64px;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 100;
-  -moz-box-shadow: 0 1px 3px 0 $disabled-text-color;
-}
-
-.nav {
-  list-style: none;
+html, body {
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
 
-.nav li {
-  display: block;
-  position: relative;
+body {
+  @include flex-box(column);
+  font-family: $font;
+  font-size: $font-size;
 }
 
-.nav li a {
-  position: relative;
-}
+.top {
+  @include box-shadow();
+  @include flex();
+  z-index: 1000;
 
-.nav.horizontal li {
-  float: left;
-}
-
-
-.header {
-  position: relative;
-  @include clearfix();
-}
-
-.header .left {
-  background: $white;
-  position: absolute;
-}
-
-.header .right {
-  background: $white;
-  float: right;
-}
-
-#left-panel {
-  background: $gray-dark;
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  top: 64px;
-  width: 64px;
-  z-index: 101;
-}
-
-#left-panel.collapsed{
-
+  &>div {
+    @include flex-item(1, 0, 64px);
+  }
 }
 
 .main {
-  background: $gray-bright;
-  height: 100%;
-  //overflow: hidden;
-  padding: 64px 0 0 64px ;
-  width: 100%;
-  @include clearfix();
+  @include flex-box();
+  @include flex-item(1, 1, auto);
+
+  &>.body {
+    background: $gray-bright;
+    @include flex-box(column);
+    @include flex-item(1, 1, auto);
+
+    &>.title {
+      background: $gray-light;
+      @include box-shadow();
+      @include flex-item(0, 0, auto);
+      padding: $gutter;
+      z-index: 800;
+    }
+
+    &>.content {
+      @include box-shadow();
+      @include flex-box();
+      @include flex-item(1, 1, auto);
+      padding: $gutter;
+      z-index: 700;
+    }
+
+    &>.footer {
+      background: #FEFEFE;
+      flex: 0 0 auto;
+      padding: 16px;
+    }
+  }
 }
 
-.title {
-  background: $gray-light;
-  border-bottom: 1px solid $divider-color;
-  padding: $global-gutter;
-  @include clearfix();
-}
+@media screen and (max-width: $small){
+  .top {
+    @include flex-item(0, 0, 128px);
+    @include flex-column();
 
-.content {
-  height: 100%;
-  left: 0;
-  padding: $global-gutter;
-  position: relative;
-  width: 100%;
-  @include clearfix();
-}
-
-.footer {
-  background: $white;
-  bottom: 0;
-  padding: $global-gutter;
-  position: absolute;
-  right: 0;
-  width: 100%
-}
-
-header.title {
-  background: $gray-light;
-  border-bottom: 1px solid $divider-color;
-  padding: 20px;
-}
-
-header.title h3{
-  color: $primary-text-color;
-  font-size: 24px;
-  font-weight: 300;
-  margin: 0 0 4px;
-  padding: 0;
-}
-
-#right-panel {
-  background: $white;
-  box-shadow: 0 8px 14px $disabled-text-color;
-  display: block;
-  height: 100%;
-  position: fixed;
-  transition: transform 0.3s;
-  width: 360px;
-  z-index: 300;
-  -webkit-transition: -webkit-transform 0.3s;
-}
-
-.slide-right {
-  right: 0;
-  top: 0;
-  transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-}
-
-.slide-right.is-active {
-  transform: translateX(0);
-  -ms-transform: translateX(0);
-  -webkit-transform: translateX(0);
-}
-
-.bottom-panel {
-
-}
-
-@media screen and (max-width: 480px){
-  .top-bar {
-    position: relative;
-
-    &:before{
-      box-shadow: 0 1px 3px 0 $disabled-text-color;
-      content: '';
-      height: 64px;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 0;
-      -moz-box-shadow: 0 1px 3px 0 $disabled-text-color;
+    &>div:nth-child(1){
+      border-bottom: solid 1px $black;
     }
   }
 
-  .header .left {
-    border-bottom: 1px solid $disabled-text-color;
-    height: 64px;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 100;
-  }
-
-  .header .right {
-    box-shadow: 0 1px 3px 0 $disabled-text-color;
-    float: none;
-    height: 65px; // remove later
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 64px;
-    -moz-box-shadow: 0 1px 3px 0 $disabled-text-color;
-  }
-
-  #left-panel {
-    display: none;
-  }
-
-  .main {
-    padding-left: 0;
-    padding-right: 0;
+  .main > .left-menu{
+    @include hide();
   }
 }
 
-#screen {
-  margin: 0 auto;
-}
+@media screen and (min-width: 481px){
+  .top {
+    @include flex-item(0, 0, 64px);
+    @include flex-row();
+  }
 
-.navigator {
-  margin: 0 auto;
-  width: 650px;
+  .main > .left-menu {
+    background: $gray-dark;
+    @include flex-item(0, 0, 64px);
+    z-index: 900;
+  }
 }
-
-.navigator .card {
-  color: $primary-text-color;
-  font-size: 20px;
-  text-align: center;
-}
-
-@import 'teambuilder';
-@import 'pokemon';
-@import 'pokedex';

@@ -6,19 +6,13 @@ class PokemonEntryComponent extends React.Component {
 
     render(){
         return (
-            <li>
-                <div className="icon">1</div>
-                <div className="name">1</div>
-                <div className="types">1</div>
-                <div className="abilities">1</div>
-                <div className="stat">1</div>
-                <div className="stat">1</div>
-                <div className="stat">1</div>
-                <div className="stat">1</div>
-                <div className="stat">1</div>
-                <div className="stat">1</div>
-                <div className="stat">1</div>
-            </li>
+            <div className="pokemon">
+                <div>icon</div>
+                <div>name</div>
+                <div>types</div>
+                <div>abilities</div>
+                <div>statistics</div>
+            </div>
         );
     }
 }

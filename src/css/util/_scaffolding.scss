@@ -5,36 +5,7 @@
 }
 
 :focus {
-  outline: none;
-}
-
-img {
-  display: inline-block;
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
-  -ms-interpolation-mode: bicubic;
-}
-
-textarea {
-  border-radius: $global-radius;
-  height: auto;
-  min-height: 50px;
-}
-
-select {
-  border-radius: $global-radius;
-  width: 100%;
-}
-
-button {
-  background: transparent;
-  border: 0;
-  border-radius: $global-radius;
-  line-height: 1.846153846;
-  padding: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+	outline: none;
 }
 
 a {
@@ -43,20 +14,4 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-.is-visible {
-  display: block !important;
-}
-
-.is-hidden {
-  display: none !important;
-}
-
-.circle {
-  border-radius: 50%;
-}
-
-p {
-  margin: 0 0 12px;
 }

@@ -13,8 +13,8 @@ $success: #000000;
 $warning: #000000;
 $danger: #000000;
 
-$black: #0a0a0a !default;
-$white: #fefefe !default;
+$black: #0A0A0A !default;
+$white: #FEFEFE !default;
 
 $normal: #B4966E !default;
 $fighting: #FF6464 !default;
@@ -37,17 +37,100 @@ $fairy: #FF78AA !default;
 
 .primary {
   background: $primary;
-  color: $white;
+
 }
 
 .white {
   background: $white;
 }
 
-.grass {
-  background: $grass;
+.normal {
+  background: $normal;
+  color: $white;
+}
+
+.fighting {
+  background: $fighting;
+  color: $white;
+}
+
+.flying {
+  background: $flying;
+  color: $white;
 }
 
 .poison {
   background: $poison;
+  color: $white;
+}
+
+.ground {
+  background: $ground;
+  color: $white;
+}
+
+.rock {
+  background: $rock;
+  color: $white;
+}
+
+.bug {
+  background: $bug;
+  color: $white;
+}
+
+.ghost {
+  background: $ghost;
+  color: $white;
+}
+
+.steel {
+  background: $steel;
+  color: $white;
+}
+
+.fire {
+  background: $fire;
+  color: $white;
+}
+
+.water {
+  background: $water;
+  color: $white;
+}
+
+.grass {
+  background: $grass;
+  color: $white;
+}
+
+.electric {
+  background: $electric;
+  color: $white;
+}
+
+.psychic {
+  background: $psychic;
+  color: $white;
+}
+
+.ice {
+  background: $ice;
+  color: $white;
+}
+
+
+.dragon {
+  background: $dragon;
+  color: $white;
+}
+
+.dark {
+  background: $dark;
+  color: $white;
+}
+
+.fairy {
+  background: $fairy;
+  color: $white;
 }

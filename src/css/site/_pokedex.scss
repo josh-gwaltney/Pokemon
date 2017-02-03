@@ -1,0 +1,81 @@
+#pokedex {
+
+  &>.search {
+
+    &>.body {
+      @include flex-box(column);
+
+      &>.form-group {
+        @include flex-item();
+      }
+
+      &>.results{
+        align-self: stretch;
+        @include flex-box(column);
+        @include flex-item(0, 1, auto);
+        overflow-y: scroll;
+
+        &>div {
+          @include flex-box();
+          @include flex-item();
+
+          &>div {
+
+          }
+        }
+
+        &>.pokemon {
+          .icon {
+            @include flex-item(1, 0, 7%);
+          }
+
+          .name {
+            @include flex-item(1, 0, 14%);
+          }
+
+          .types {
+            @include flex-item(1, 0, 19%);
+          }
+
+          .abilities {
+            @include flex-item(1, 0, 27%);
+          }
+
+          .statistics {
+            @include flex-item(1, 0, 32%);
+          }
+        }
+
+        &>.item {
+
+        }
+
+        &>.ability {
+
+        }
+
+        &>.move {
+
+        }
+
+        &::-webkit-scrollbar-track {
+          -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+          background-color: #F5F5F5;
+        }
+
+        &::-webkit-scrollbar {
+          width: 6px;
+          background-color: #F5F5F5;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: #000000;
+        }
+      }
+    }
+  }
+
+  &.short {
+    @include flex-box(row);
+  }
+}
