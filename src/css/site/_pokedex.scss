@@ -3,6 +3,7 @@
   @include flex-item(1, 1, auto);
 
   &>.search {
+    margin-right: 8px;
 
     &>.body {
       @include flex-box(column);
@@ -43,6 +44,25 @@
 
           .types {
             @include flex-item(1, 0, 19%);
+            @include flex-box();
+            padding: 6px 3px;
+            align-items: center;
+
+            &>div {
+              @include flex-item(1, 1, 0);
+              padding: 3px 0;
+              text-align: center;
+
+              &:nth-child(1){
+                margin-right: 4px;
+              }
+
+              &:nth-child(2){
+                margin-left: 3px;
+              }
+            }
+
+
           }
 
           .abilities {
@@ -50,7 +70,14 @@
           }
 
           .statistics {
+            align-items: center;
             @include flex-item(1, 0, 32%);
+            @include flex-box();
+            text-align: center;
+
+            &>div {
+              @include flex-item(1, 1, auto);
+            }
           }
         }
 
@@ -83,7 +110,7 @@
     }
   }
 
-  &.short {
-    @include flex-box(row);
+  &>.entry {
+    margin-left: 8px;
   }
 }

@@ -2,7 +2,11 @@ class PokedexSearch extends React.Component {
     constructor(){
         super();
 
-        this._data = [];
+        this._data = document.data;
+    }
+
+    handleClick(x){
+        console.log(x);
     }
 
     render(){
@@ -21,7 +25,7 @@ class PokedexSearch extends React.Component {
                     </div>
                     <div className="results">
                         { this._data.map((x, i) =>
-                            <PokedexEntryShort value={x} key={i}/>
+                            <PokedexEntryShort value={x} key={i} onClick={ () => this.handleClick(x) } />
                         ) }
                     </div>
                 </div>
