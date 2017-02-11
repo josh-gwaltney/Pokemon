@@ -6,17 +6,18 @@
 
 .form-control {
   background: transparent;
-  border-bottom: 1px solid $divider-color;
+  border-bottom: 1px solid $gray-light;
   border-left: none;
   border-right: none;
   border-top: none;
   box-shadow: none;
-  color: $secondary-text-color;
+  color: $gray-dark;
   display: block;
   font-size: 12px;
   height: 20px;
   line-height: 1.846153846;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .25s, box-shadow ease-in-out .25s;
+
   width: 100%;
 }
 
@@ -53,6 +54,6 @@
 .form-control.floating-label:active ~ label {
   color: $gray-dark;
   opacity: 1;
-  top: 0px;
+  top: 0;
   font-size: 12px;
 }

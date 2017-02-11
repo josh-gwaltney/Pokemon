@@ -1,0 +1,13 @@
+.sprite {
+
+  &.portrait {
+    border: solid 1px $black;
+    background-image: url('assets/portraits.png');
+    height: 128px;
+    width: 128px;
+
+    &.bulbasaur {
+      background-position: 0px 0px;
+    }
+  }
+}

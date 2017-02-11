@@ -2,7 +2,6 @@
   background: $white;
   @include box-shadow();
   @include flex-box(column);
-  @include flex-item(1, 1, 0);
   justify-content: flex-start;
 
   &>div {

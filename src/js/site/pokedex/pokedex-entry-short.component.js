@@ -5,11 +5,21 @@ class PokedexEntryShort extends React.Component {
         this.state = this.props.value;
     }
 
+    getClassName(){
+        let name = this.state.name;
+        name = name.toLowerCase();
+        name = name.replace(" ", "");
+        name = name.replace("-", "");
+        return "sprite small " + name;
+    }
+
     render(){
         return (
             <div className="pokemon" onClick={ () => this.props.onClick() }>
-                <div className="icon">icon</div>
-                <div className="name">{ this.state.name }</div>
+                <div className="icon">
+                    <div className={ this.getClassName() }></div>
+                </div>
+                <div className="name">{ this.state.id} { this.state.name }</div>
                 <div className="types">
                     <div className={ this.state.types[0].toString().toLowerCase() }>{ this.state.types[0] }</div>
                     <div className={ this.state.types[1] ? this.state.types[1].toString().toLowerCase() : null }>{ this.state.types[1] }</div>

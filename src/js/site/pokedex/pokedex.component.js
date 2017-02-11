@@ -1,6 +1,9 @@
 class PokedexComponent extends React.Component {
     constructor(){
         super();
+        this.state = {
+            show: false
+        }
     }
 
     // createOutput(){
@@ -21,7 +24,9 @@ class PokedexComponent extends React.Component {
         return (
             <div className="pokedex">
                 <PokedexSearch />
-                <PokedexEntryFull />
+                {/*{ this.state.show ? <PokedexEntryFull /> : null }*/}
+
+                <PokedexEntryFull className="is-hidden" />
             </div>
 
         );

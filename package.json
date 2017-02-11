@@ -12,6 +12,7 @@
     "mongoose": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-router": "latest",
     "serve-favicon": "latest",
     "socket.io": "latest"
   },
@@ -19,7 +20,6 @@
     "babel-loader": "latest",
     "babel-preset-es2015": "latest",
     "babel-preset-react": "latest",
-    "browser-sync": "latest",
     "chai": "latest",
     "chai-as-promised": "latest",
     "debug": "latest",
@@ -40,11 +40,10 @@
     "gulp-nodemon": "latest",
     "gulp-notify": "latest",
     "gulp-sass": "latest",
-    "gulp-sourcemaps": "latest",
+    "gulp-task-listing": "latest",
     "gulp-uglify": "latest",
     "gulp-util": "latest",
     "gulp-webpack": "latest",
-    "mocha": "latest",
-    "webpack": "latest"
+    "mocha": "latest"
   }
 }

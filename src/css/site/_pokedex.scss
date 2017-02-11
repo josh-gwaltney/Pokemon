@@ -4,6 +4,7 @@
 
   &>.search {
     margin-right: 8px;
+    @include flex-item(0, 1, 50%);
 
     &>.body {
       @include flex-box(column);
@@ -21,6 +22,7 @@
         @include flex-box(column);
         @include flex-item(0, 1, auto);
         overflow-y: scroll;
+        padding-right: 6px;
 
         &>div {
           @include flex-box();
@@ -112,5 +114,19 @@
 
   &>.entry {
     margin-left: 8px;
+    @include flex-item(0, 1, 50%);
+
+     &>.body {
+       @include flex-box(column);
+
+       &>div {
+         @include flex-item();
+         @include flex-box();
+
+         &>div{
+           @include flex-item();
+         }
+       }
+     }
   }
 }
