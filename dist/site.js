@@ -10832,18 +10832,18 @@ var PokedexEntryFull = function (_React$Component) {
                         null,
                         React.createElement(
                             "div",
-                            null,
-                            React.createElement("div", { className: "sprites portrait" }),
+                            { className: "fluff" },
+                            React.createElement("div", { className: "sprite portrait" }),
                             React.createElement("audio", { controls: "controls" })
                         ),
                         React.createElement(
                             "div",
-                            null,
+                            { className: "info" },
                             "info"
                         ),
                         React.createElement(
                             "div",
-                            null,
+                            { className: "statistics" },
                             "stats"
                         )
                     ),

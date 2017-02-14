@@ -9,12 +9,12 @@ class PokedexEntryFull extends React.Component {
                 <div className="heading">000 Name</div>
                 <div className="body">
                     <div>
-                        <div>
-                            <div className="sprites portrait"></div>
+                        <div className="fluff">
+                            <div className="sprite portrait"></div>
                             <audio controls="controls"></audio>
                         </div>
-                        <div>info</div>
-                        <div>stats</div>
+                        <div className="info">info</div>
+                        <div className="statistics">stats</div>
                     </div>
                     <div>abilities</div>
                     <div>evolutions</div>

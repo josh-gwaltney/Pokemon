@@ -85,4 +85,15 @@ body {
     @include flex-item(0, 0, 64px);
     z-index: 900;
   }
+
+  .hide-medium {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: $large){
+
+  .hide-large {
+    visibility: hidden;
+  }
 }

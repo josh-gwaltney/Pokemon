@@ -1877,7 +1877,13 @@ body {
   .main > .left-menu {
     background: #212121;
     flex: 0 0 64px;
-    z-index: 900; } }
+    z-index: 900; }
+  .hide-medium {
+    visibility: hidden; } }
+
+@media screen and (max-width: 960px) {
+  .hide-large {
+    visibility: hidden; } }
 
 .pokedex {
   display: flex;
@@ -1954,5 +1960,12 @@ body {
         flex: 0 0 auto;
         display: flex;
         flex-flow: row nowrap; }
-        .pokedex > .entry > .body > div > div {
-          flex: 0 0 auto; }
+        .pokedex > .entry > .body > div > .fluff {
+          flex: 1 1 25%; }
+          .pokedex > .entry > .body > div > .fluff > audio {
+            width: inherit; }
+        .pokedex > .entry > .body > div > .info {
+          flex: 1 1 25%; }
+        .pokedex > .entry > .body > div > .statistics {
+          border: solid 1px #0A0A0A;
+          flex: 1 1 50%; }
