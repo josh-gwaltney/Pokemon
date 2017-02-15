@@ -1,3 +1,5 @@
+@import 'top-bar';
+@import 'left-menu';
 
 html, body {
   height: 100%;
@@ -12,14 +14,14 @@ body {
   font-size: $font-size;
 }
 
-.top {
-  @include box-shadow();
-  @include flex();
-  z-index: 1000;
-
-  &>div {
-    @include flex-item(1, 0, 64px);
-  }
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  @include flex-item(1, 1, auto);
+  @include flex-box(column);
 }
 
 .main {
@@ -56,33 +58,11 @@ body {
 }
 
 @media screen and (max-width: $small){
-  .top {
-    @include flex-item(0, 0, 128px);
-    @include flex-column();
-
-    &>div:nth-child(1){
-      border-bottom: solid 1px $black;
-    }
-  }
-
-  .main > .left-menu{
-    @include hide();
-  }
-
   .hide-small {
     visibility: hidden;
   }
 }
 
 @media screen and (min-width: 481px){
-  .top {
-    @include flex-item(0, 0, 64px);
-    @include flex-row();
-  }
 
-  .main > .left-menu {
-    background: $gray-dark;
-    @include flex-item(0, 0, 64px);
-    z-index: 900;
-  }
 }

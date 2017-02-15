@@ -1,3 +1,5 @@
+import React from 'react';
+
 class PokedexEntryFull extends React.Component {
     constructor(){
         super();
@@ -25,3 +27,5 @@ class PokedexEntryFull extends React.Component {
         );
     }
 }
+
+export default PokedexEntryFull;

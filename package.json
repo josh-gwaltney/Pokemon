@@ -8,6 +8,7 @@
     "body-parser": "latest",
     "express": "latest",
     "compression": "latest",
+    "cors": "latest",
     "morgan": "latest",
     "mongoose": "latest",
     "react": "latest",

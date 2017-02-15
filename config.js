@@ -1,28 +1,34 @@
-let dist = './dist';
-let src = './src';
-let client = src + '/client';
-let test = './test';
+const dist = './dist';
+const src = './src';
+const client = src + '/client';
+const server = src + '/client';
+const test = './test';
 
-export default {
+module.exports = {
     dist: dist,
-    assets: {
-        src: src + '/assets/**/*.*',
-        dest: dist + '/assets'
-    },
-    css: {
-        src: src + '/css/site.scss',
-        dest: dist + '/site.css'
-    },
+    css: client + '/css/site.scss',
     js: {
-        src: src + '/js/**/*.js',
-        dest: dist + '/site.js'
+        entry: {
+            app: client + '/js/app.js'
+        },
+        output: {
+            filename: 'site.js'
+        },
+        module: {
+            loaders: [
+                {
+                    test: /\.js$/,
+                    exclude: /node_modules/,
+                    loader: 'babel-loader',
+                    query: {
+                        presets: [
+                            'es2015',
+                            'react'
+                        ]
+                    }
+                }
+            ]
+        }
     },
-    html: {
-        src: src + '/index.html',
-        dest: dist + '/index.html'
-    },
-    vendorjs: {
-        src: [],
-        dest: ''
-    }
-}
+    html: client + '/index.html'
+};

@@ -1,4 +1,4 @@
-document.data = [
+module.exports = [
     {
         "id": 1,
         "name": "Bulbasaur",

@@ -1,45 +1,40 @@
-import config from './config';
 import gulp from 'gulp';
 import plug from 'gulp-load-plugins';
-import glob from 'glob';
-import clean from './util/gulp/clean.gulp';
-import js from './util/gulp/js.gulp';
-import css from './util/gulp/css.gulp';
-import assets from './util/gulp/assets.gulp';
-import inject from './util/gulp/inject.gulp';
-import build from './util/gulp/build.gulp';
-import serve from './util/gulp/serve.gulp';
+import config from './config';
+import tasks from './util/gulp';
 
 let plugins = plug();
 
-gulp.task('help', () => {
-    return plugins.taskListing;
+gulp.task('default', () => {
+    console.log('foo');
+});
+
+gulp.task('help', plugins.taskListing);
+
+gulp.task('build', ['js', 'css', 'inject'], () => {
+    tasks.build(config, gulp, plugins);
 });
 
 gulp.task('clean', () => {
-    clean(config, gulp, plugins);
-});
-
-gulp.task('assets', () => {
-    assets(config, gulp, plugins);
-});
-
-gulp.task('js', () => {
-    js(config, gulp, plugins);
+    tasks.clean(config, gulp, plugins);
 });
 
 gulp.task('css', () => {
-    css(config, gulp, plugins);
+   tasks.css(config, gulp, plugins);
 });
 
 gulp.task('inject', () => {
-    inject(config, gulp, plugins);
+    tasks.inject(config, gulp, plugins);
 });
 
-gulp.task('build', ['assets', 'js', 'css', 'inject'], () => {
-    build(config, gulp, plugins);
+gulp.task('js', () => {
+   tasks.js(config, gulp, plugins);
+});
+
+gulp.task('watch', () => {
+   tasks.watch(config, gulp, plugins);
 });
 
 gulp.task('serve', () => {
-    serve(config, gulp, plugins);
+    tasks.serve(config, gulp, plugins);
 });

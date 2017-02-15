@@ -1,8 +1,12 @@
+import React from 'react';
+
+import PokedexEntryShort from './pokedex-entry-short.component';
+
 class PokedexSearch extends React.Component {
     constructor(){
         super();
 
-        this._data = document.data;
+        this._data = require('./data');
     }
 
     handleClick(x){
@@ -33,3 +37,5 @@ class PokedexSearch extends React.Component {
         );
     }
 }
+
+export default PokedexSearch;

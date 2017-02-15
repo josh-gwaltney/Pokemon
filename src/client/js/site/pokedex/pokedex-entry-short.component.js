@@ -1,3 +1,5 @@
+import React from 'react';
+
 class PokedexEntryShort extends React.Component {
     constructor(props){
         super(props);
@@ -38,3 +40,5 @@ class PokedexEntryShort extends React.Component {
         );
     }
 }
+
+export default PokedexEntryShort;

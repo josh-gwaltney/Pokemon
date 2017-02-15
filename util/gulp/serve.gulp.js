@@ -1,7 +1,7 @@
-export default function serve(config, gulp, plugins){
+export default function(config, gulp, plugins) {
     return plugins.nodemon({
-        ignore: ['dist/**/*.*']
+        ignore: [config.dist + '/**/*.*']
     })
         .on('restart', ['build'], function(){})
         .on('start', ['build'], function(){});
-}
+};
