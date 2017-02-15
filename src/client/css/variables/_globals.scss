@@ -5,7 +5,9 @@ $small: 480px !default;
 $medium: 760px !default;
 $large: 960px !default;
 $x-large: 1280px !default;
+$xx-large: 1950px !default;
 
+$breakpoints: $small, $medium, $large, $x-large, $xx-large;
 
 // fonts
 $font: monospace !default;

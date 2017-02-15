@@ -123,8 +123,21 @@
          @include flex-item();
          @include flex-box();
 
-         &>div{
-           @include flex-item();
+         &>.fluff {
+          @include flex-item(1, 1, 25%);
+
+           &>audio{
+            width: inherit;
+           }
+         }
+
+         &>.info {
+          @include flex-item(1, 1, 25%);
+         }
+
+         &>.statistics {
+          border: solid 1px $black;
+          @include flex-item(1, 1, 50%);
          }
        }
      }

@@ -64,5 +64,13 @@ body {
 }
 
 @media screen and (min-width: 481px){
+  .hide-medium {
+    visibility: hidden;
+  }
+}
 
+@media screen and (max-width: $large){
+  .hide-large {
+    visibility: hidden;
+  }
 }
