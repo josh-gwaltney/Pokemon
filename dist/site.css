@@ -1847,6 +1847,8 @@ a:hover {
 @media screen and (min-width: 481px) {
   .left-menu {
     transition: width 0.5s cubic-bezier(0.15, 0.99, 0.18, 1.01); }
+    .left-menu > a {
+      color: #FEFEFE; }
   .left-menu:hover {
     flex-basis: 240px !important; }
   @keyframes slideIn {
@@ -1906,16 +1908,7 @@ body {
   .hide-small {
     visibility: hidden; } }
 
-<<<<<<< HEAD
-=======
 @media screen and (min-width: 481px) {
-  .top {
-    flex: 0 0 64px;
-    flex-flow: row nowrap; }
-  .main > .left-menu {
-    background: #212121;
-    flex: 0 0 64px;
-    z-index: 900; }
   .hide-medium {
     visibility: hidden; } }
 
@@ -1923,88 +1916,284 @@ body {
   .hide-large {
     visibility: hidden; } }
 
->>>>>>> origin/master
 .pokedex {
   display: flex;
   flex-flow: row nowrap;
   flex: 1 1 auto; }
-  .pokedex > .search {
-    margin-right: 8px;
-    flex: 0 1 50%; }
-    .pokedex > .search > .body {
+  .pokedex > .search > .body {
+    display: flex;
+    flex-flow: column nowrap; }
+    .pokedex > .search > .body > .tab-bar {
+      margin: 0 -6px 6px; }
+    .pokedex > .search > .body > .form-group {
+      flex: 0 0 auto; }
+    .pokedex > .search > .body > .results {
+      align-self: stretch;
       display: flex;
-      flex-flow: column nowrap; }
-      .pokedex > .search > .body > .tab-bar {
-        margin: 0 -6px 6px; }
-      .pokedex > .search > .body > .form-group {
+      flex-flow: column nowrap;
+      flex: 0 1 auto;
+      overflow-y: scroll;
+      padding-right: 6px; }
+      .pokedex > .search > .body > .results > div {
+        display: flex;
+        flex-flow: row nowrap;
         flex: 0 0 auto; }
-      .pokedex > .search > .body > .results {
-        align-self: stretch;
+        .pokedex > .search > .body > .results > div > div {
+          border-bottom: 1px solid #0A0A0A;
+          height: 40px;
+          padding: 3px; }
+      .pokedex > .search > .body > .results > .pokemon .icon {
+        flex: 1 0 7%; }
+      .pokedex > .search > .body > .results > .pokemon .name {
+        flex: 1 0 14%; }
+      .pokedex > .search > .body > .results > .pokemon .types {
+        flex: 1 0 19%;
         display: flex;
-        flex-flow: column nowrap;
-        flex: 0 1 auto;
-        overflow-y: scroll;
-        padding-right: 6px; }
-        .pokedex > .search > .body > .results > div {
-          display: flex;
-          flex-flow: row nowrap;
-          flex: 0 0 auto; }
-          .pokedex > .search > .body > .results > div > div {
-            border-bottom: 1px solid #0A0A0A;
-            height: 40px;
-            padding: 3px; }
-        .pokedex > .search > .body > .results > .pokemon .icon {
-          flex: 1 0 7%; }
-        .pokedex > .search > .body > .results > .pokemon .name {
-          flex: 1 0 14%; }
-        .pokedex > .search > .body > .results > .pokemon .types {
-          flex: 1 0 19%;
-          display: flex;
-          flex-flow: row nowrap;
-          padding: 6px 3px;
-          align-items: center; }
-          .pokedex > .search > .body > .results > .pokemon .types > div {
-            flex: 1 1 0;
-            padding: 3px 0;
-            text-align: center; }
-            .pokedex > .search > .body > .results > .pokemon .types > div:nth-child(1) {
-              margin-right: 4px; }
-            .pokedex > .search > .body > .results > .pokemon .types > div:nth-child(2) {
-              margin-left: 3px; }
-        .pokedex > .search > .body > .results > .pokemon .abilities {
-          flex: 1 0 27%; }
-        .pokedex > .search > .body > .results > .pokemon .statistics {
-          align-items: center;
-          flex: 1 0 32%;
-          display: flex;
-          flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        padding: 6px 3px;
+        align-items: center; }
+        .pokedex > .search > .body > .results > .pokemon .types > div {
+          flex: 1 1 0;
+          padding: 3px 0;
           text-align: center; }
-          .pokedex > .search > .body > .results > .pokemon .statistics > div {
-            flex: 1 1 auto; }
-        .pokedex > .search > .body > .results::-webkit-scrollbar-track {
-          -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-          background-color: #F5F5F5; }
-        .pokedex > .search > .body > .results::-webkit-scrollbar {
-          width: 6px;
-          background-color: #F5F5F5; }
-        .pokedex > .search > .body > .results::-webkit-scrollbar-thumb {
-          background-color: #000000; }
-  .pokedex > .entry {
-    margin-left: 8px;
-    flex: 0 1 50%; }
-    .pokedex > .entry > .body {
-      display: flex;
-      flex-flow: column nowrap; }
-      .pokedex > .entry > .body > div {
-        flex: 0 0 auto;
+          .pokedex > .search > .body > .results > .pokemon .types > div:nth-child(1) {
+            margin-right: 4px; }
+          .pokedex > .search > .body > .results > .pokemon .types > div:nth-child(2) {
+            margin-left: 3px; }
+      .pokedex > .search > .body > .results > .pokemon .abilities {
+        flex: 1 0 27%; }
+      .pokedex > .search > .body > .results > .pokemon .statistics {
+        align-items: center;
+        flex: 1 0 32%;
         display: flex;
-        flex-flow: row nowrap; }
-        .pokedex > .entry > .body > div > .fluff {
-          flex: 1 1 25%; }
-          .pokedex > .entry > .body > div > .fluff > audio {
-            width: inherit; }
-        .pokedex > .entry > .body > div > .info {
-          flex: 1 1 25%; }
-        .pokedex > .entry > .body > div > .statistics {
+        flex-flow: row nowrap;
+        text-align: center; }
+        .pokedex > .search > .body > .results > .pokemon .statistics > div {
+          flex: 1 1 auto; }
+      .pokedex > .search > .body > .results::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #F5F5F5; }
+      .pokedex > .search > .body > .results::-webkit-scrollbar {
+        width: 6px;
+        background-color: #F5F5F5; }
+      .pokedex > .search > .body > .results::-webkit-scrollbar-thumb {
+        background-color: #000000; }
+  .pokedex > .entry > .body {
+    display: flex;
+    flex-flow: column nowrap; }
+    .pokedex > .entry > .body > div {
+      flex: 0 0 auto;
+      display: flex;
+      flex-flow: row nowrap; }
+      .pokedex > .entry > .body > div > .fluff {
+        flex: 1 1 25%; }
+        .pokedex > .entry > .body > div > .fluff > audio {
+          width: inherit; }
+      .pokedex > .entry > .body > div > .info {
+        flex: 1 1 25%; }
+      .pokedex > .entry > .body > div > .statistics {
+        border: solid 1px #0A0A0A;
+        flex: 1 1 50%; }
+
+@media screen and (max-width: 1280px) {
+  .pokedex > .card {
+    flex: 0 1 100%; } }
+
+@media screen and (min-width: 1280px) {
+  .pokedex > .card {
+    flex: 0 1 50%; }
+    .pokedex > .card:nth-child(1) {
+      margin-right: 8px; }
+    .pokedex > .card:nth-child(2) {
+      margin-left: 8px; } }
+
+@media screen and (min-width: 1950px) {
+  .pokedex > .card {
+    flex: 0 1 33%; }
+    .pokedex > .card:nth-child(2) {
+      margin-right: 8px; }
+    .pokedex > .card:nth-child(3) {
+      margin-left: 8px; } }
+
+.team-bar {
+  height: 44px;
+  width: 100%; }
+  .team-bar .bar-button {
+    border: solid 1px #0A0A0A;
+    display: block;
+    height: 44px;
+    float: left;
+    margin: 0 2px 0 0;
+    overflow: hidden;
+    text-align: center;
+    white-space: pre;
+    width: 88px; }
+
+.individual {
+  border-top: solid 1px #0A0A0A;
+  margin-top: -1px;
+  width: 100%; }
+  .individual .chart {
+    border: solid 1px #0A0A0A;
+    border-radius: 5px;
+    height: 172px;
+    margin-top: 8px;
+    padding: 2px 0 0 3px;
+    width: 626px; }
+
+.bounding-box {
+  border: solid 1px #0A0A0A;
+  height: 600px;
+  padding: 4px;
+  width: 800px; }
+  .bounding-box .selector {
+    border: solid 1px #0A0A0A;
+    float: left;
+    height: 592px;
+    padding: 4px;
+    width: 138px; }
+    .bounding-box .selector .search-box {
+      border: solid 1px #0A0A0A;
+      padding: 2px;
+      width: 100%; }
+    .bounding-box .selector ul {
+      display: block;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .bounding-box .selector ul li {
+        display: block; }
+  .bounding-box .team {
+    border: solid 1px #0A0A0A;
+    float: left;
+    height: 592px;
+    width: 660px; }
+    .bounding-box .team .team-top {
+      border-bottom: solid 1px #0A0A0A;
+      height: 44px;
+      width: 659px; }
+      .bounding-box .team .team-top ul {
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        .bounding-box .team .team-top ul li {
+          display: block;
+          float: left;
+          height: 44px;
+          margin: 0 1px;
+          text-align: center; }
+        .bounding-box .team .team-top ul li.first {
+          width: 90px; }
+        .bounding-box .team .team-top ul li.member {
+          border-left: solid 1px #0A0A0A;
+          border-right: solid 1px #0A0A0A;
+          width: 86px; }
+    .bounding-box .team .team-middle {
+      height: 155px;
+      padding: 2px;
+      width: 627px; }
+      .bounding-box .team .team-middle .spacer {
+        height: 26px; }
+      .bounding-box .team .team-middle .col-1 {
+        float: left;
+        height: 155px;
+        width: 117px; }
+        .bounding-box .team .team-middle .col-1 .nickname-box {
           border: solid 1px #0A0A0A;
-          flex: 1 1 50%; }
+          border-radius: 4px;
+          height: 48px;
+          padding: 2px;
+          width: 112px; }
+        .bounding-box .team .team-middle .col-1 .inner-box {
+          border-left: solid 1px #0A0A0A;
+          border-bottom: solid 1px #0A0A0A;
+          border-bottom-left-radius: 4px;
+          margin-left: 2px;
+          padding: 2px; }
+          .bounding-box .team .team-middle .col-1 .inner-box .portrait-box {
+            border: solid 1px #0A0A0A;
+            height: 64px;
+            margin: 0 auto;
+            width: 64px; }
+      .bounding-box .team .team-middle .col-2 {
+        border-bottom: solid 1px #0A0A0A;
+        float: left;
+        height: 155px;
+        padding: 4px;
+        width: 230px; }
+        .bounding-box .team .team-middle .col-2 .inner-box {
+          border-top: solid 1px #0A0A0A;
+          width: 230px; }
+      .bounding-box .team .team-middle .col-3 {
+        border-bottom: solid 1px #0A0A0A;
+        float: left;
+        height: 155px;
+        padding: 4px;
+        width: 138px; }
+        .bounding-box .team .team-middle .col-3 .inner-box {
+          border-top: solid 1px #0A0A0A;
+          width: 138px; }
+      .bounding-box .team .team-middle .col-4 {
+        border-bottom: solid 1px #0A0A0A;
+        float: left;
+        height: 155px;
+        padding: 4px;
+        width: 138px; }
+        .bounding-box .team .team-middle .col-4 .inner-box {
+          border-bottom-right-radius: 4px;
+          border-top-right-radius: 4px;
+          border-top: solid 1px #0A0A0A;
+          border-right: solid 1px #0A0A0A;
+          height: 125px;
+          width: 136px; }
+    .bounding-box .team .team-bottom {
+      border-top: solid 1px #0A0A0A;
+      height: 250px;
+      margin-top: 4px;
+      padding: 4px;
+      width: 647px; }
+  .bounding-box .team-input {
+    border: solid 1px #0A0A0A;
+    border-radius: 4px;
+    height: 20px;
+    padding: 2px;
+    width: 100%; }
+
+.pokedex ul {
+  display: block;
+  height: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+  .pokedex ul li {
+    display: block;
+    height: 32px;
+    width: 100%; }
+    .pokedex ul li .pic {
+      width: 10%;
+      float: left; }
+    .pokedex ul li .name {
+      width: 15%;
+      float: left; }
+    .pokedex ul li .types {
+      width: 25%;
+      float: left; }
+    .pokedex ul li .abilities {
+      width: 25%;
+      float: left; }
+    .pokedex ul li .stats {
+      width: 25%;
+      float: left; }
+      .pokedex ul li .stats ul {
+        display: block;
+        height: 16px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%; }
+        .pokedex ul li .stats ul li {
+          display: block;
+          float: left;
+          height: 16px; }

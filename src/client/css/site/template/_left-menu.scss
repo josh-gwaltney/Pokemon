@@ -1,0 +1,37 @@
+.left-menu {
+  background: $gray-dark;
+  z-index: 900;
+
+  &.collapsed {
+    @include flex-item(0, 0, 64px);
+  }
+
+  &.expanded {
+    @include flex-item(0, 0, 240px);
+  }
+}
+@media screen and (max-width: $small){
+  .left-menu{
+    @include hide();
+  }
+}
+
+@media screen and (min-width: 481px){
+  .left-menu {
+    transition: width 0.5s cubic-bezier(0.15, 0.99, 0.18, 1.01);
+
+    &>a {
+      color: $white;
+    }
+  }
+
+  .left-menu:hover{
+    flex-basis: 240px !important;
+  }
+
+  @keyframes slideIn {
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
